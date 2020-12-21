@@ -12,7 +12,7 @@ export default function Home() {
         />
       </Head>
       <main className="h-screen flex items-center justify-center">
-        <HomeNav />
+        {/* <HomeNav /> */}
       </main>
     </div>
   );
