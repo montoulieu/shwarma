@@ -15,8 +15,8 @@ export default function Home() {
       </Head>
       <main className="container mx-auto">
         <MainHeader />
-        <PhotoBio />
         <SocialLinks />
+        <PhotoBio />
       </main>
     </div>
   );
