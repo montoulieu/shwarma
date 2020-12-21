@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import MainHeader from '@components/MainHeader';
 import PhotoBio from '@components/PhotoBio';
+import SocialLinks from '@components/SocialLinks';
 
 export default function Home() {
   return (
@@ -15,7 +16,7 @@ export default function Home() {
       <main className="container mx-auto">
         <MainHeader />
         <PhotoBio />
-        {/* <HomeNav /> */}
+        <SocialLinks />
       </main>
     </div>
   );
