@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@components/*": ["components/*"],
+      "@hooks/*": ["hooks/*"],
+      "@utils/*": ["utils/*"]
+    },
+  },
+  "exclude": [
+    "node_modules",
+    "out",
+    ".vscode",
+    ".next",
+  ]
+}
