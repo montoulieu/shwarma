@@ -1,5 +1,6 @@
 import Head from 'next/head';
-import HomeNav from '../components/HomeNav';
+import HomeNav from '@components/HomeNav';
+import SocialLinks from '@components/SocialLinks';
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       </Head>
       <main className="h-screen flex items-center justify-center">
         {/* <HomeNav /> */}
+        <SocialLinks />
       </main>
     </div>
   );
