@@ -1,5 +1,6 @@
 import Head from 'next/head';
-import HomeNav from '../components/HomeNav';
+import MainHeader from '@components/MainHeader';
+import PhotoBio from '@components/PhotoBio';
 
 export default function Home() {
   return (
@@ -11,7 +12,9 @@ export default function Home() {
           href="/favicon.ico"
         />
       </Head>
-      <main className="h-screen flex items-center justify-center">
+      <main className="container mx-auto">
+        <MainHeader />
+        <PhotoBio />
         {/* <HomeNav /> */}
       </main>
     </div>
