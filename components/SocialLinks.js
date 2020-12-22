@@ -60,7 +60,7 @@ function SocialLinks() {
     },
   ];
   return (
-    <div>
+    <div className="py-10">
       <div className="music-links mb-4">
         <ul className="flex flex-wrap justify-center">
           {musicPlatforms.map((platform) => (

@@ -1,8 +1,35 @@
 import Image from 'next/image';
 
 function PhotoBio() {
+  const bandMembers = [
+    {
+      name: 'Pieter Montoulieu',
+      role: 'guitar, vocals',
+      time: '2015-present',
+    },
+    {
+      name: 'Jackson Kaufman',
+      role: 'guitar, vocals',
+      time: '2015-present',
+    },
+    {
+      name: 'Steve Sanchez',
+      role: 'drums, backing vocals',
+      time: '2015-present',
+    },
+    {
+      name: 'Dalton Groves',
+      role: 'keys, backing vocals',
+      time: '2018-present',
+    },
+    {
+      name: 'Kevin Schultz',
+      role: 'bass, backing vocals',
+      time: '2018-present',
+    },
+  ];
   return (
-    <div className="md:flex py-10 px-4 md:px-0">
+    <div className="md:flex px-4 md:px-0">
       <div className="md:w-1/2 text-center mb-5 md:mb-0 ">
         <Image
           src="/images/shred-shwarma-sm.jpg"
@@ -15,36 +42,23 @@ function PhotoBio() {
       <div className="md:w-1/2 text-white flex justify-center flex-col md:pl-12">
         <h2 className="heading font-bubblegum">About</h2>
         <div className="mb-10 font-light text-white text-xl">
-          <p>shwarma is an experimental psychedelic rock band hailing from Denver, Colorado.</p>
-          <p>asdlfjnasldivjnaslidfbasd fasld aslkdfj an skdljfb lasdjfbalsdbfasldjhfb asjldhfb</p>
+          <p className="mb-2">shwarma is an experimental psychedelic and progressive rock band hailing from Denver, Colorado.</p>
+          <p>Born out of a desire to play whatever style we felt like trying, and always with an appreciation for the greats that have come before and inspired us.</p>
         </div>
         <h2 className="heading font-bubblegum">Members</h2>
         <ul className="text-white">
-          <li>
-            <strong>Pieter Montoulieu</strong>
-            {' '}
-            <small> – guitar, vocals (2015-present)</small>
-          </li>
-          <li>
-            <strong>Jackson Kaufman</strong>
-            {' '}
-            <small> – guitar, vocals (2015-present)</small>
-          </li>
-          <li>
-            <strong>Steve Sanchez</strong>
-            {' '}
-            <small> – drums, backing vocals (2015-present)</small>
-          </li>
-          <li>
-            <strong>Dalton Groves</strong>
-            {' '}
-            <small> – keys, backing vocals (2019–present)</small>
-          </li>
-          <li>
-            <strong>Kevin Schultz</strong>
-            {' '}
-            <small> – bass, backing vocals (2019–present)</small>
-          </li>
+          {bandMembers.map((member) => (
+            <li>
+              <strong>{member.name}</strong>
+              {' '}
+              <small>
+                {' '}
+                –
+                {' '}
+                {member.role}
+              </small>
+            </li>
+          ))}
         </ul>
       </div>
     </div>
