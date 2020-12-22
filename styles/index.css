@@ -42,8 +42,9 @@ body {
   text-shadow: 0px 0px 5px rgba(0,0,0,0.35);
   @apply text-5xl font-bold text-fuchsia-400;
 }
+
 .subheading {
-  @apply text-xl font-bold text-purple-100;
+  @apply text-2xl font-extrabold text-purple-100 tracking-wider;
 }
 
 .pink-hover {

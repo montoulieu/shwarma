@@ -75,7 +75,7 @@ function PhotoSlider() {
             <div className="slide p-3">
               <div
                 // onClick={() => setIndexAndOpen(index)}
-                className='gallery-photo bg-center bg-cover rounded-lg h-60 sm:h-80 lg:h-80 xl:h-96 mx-12 md:mx-0'
+                className='gallery-photo bg-center bg-cover rounded-lg w-full h-60 sm:h-80 lg:h-80 xl:h-96'
                 style={{ backgroundImage: `url('${photo.path}')` }}
                 alt={photo.label}
                 key={photo.label}
@@ -84,26 +84,6 @@ function PhotoSlider() {
             </div>
           )}
         </Slider>
-      </div>
-      <div
-        style={divStyle}
-        className="grid md:grid-cols-3 md:grid-rows-2 gap-6 mb-10"
-      >
-        {/* {photos
-          .slice(0, 3)
-          .map((photo, index) =>
-            <div
-              // onClick={() => setIndexAndOpen(index)}
-              className={'gallery-photo border border-primary bg-center bg-cover relative md:row-start-1 md:row-end-3'}
-              style={{ backgroundImage: `url('${photo.path}')` }}
-              alt={photo.label}
-              key={photo.label}
-            >
-              <div className="uppercase label-full-size transition-opacity duration-200 opacity-0 bg-primary absolute bottom-0 right-0 p-3">
-                full size +
-              </div>
-            </div>
-          )} */}
       </div>
     </div>
   )
