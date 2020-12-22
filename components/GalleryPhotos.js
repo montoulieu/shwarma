@@ -67,7 +67,7 @@ function PhotoSlider() {
   }
 
   return (
-    <div className="photo-gallery py-5">
+    <div className="photo-gallery py-5 px-4 md:px-0">
       <h2 className="heading font-bubblegum mb-3">Photo Gallery</h2>
       <div className="slider">
         <Slider {...settings}>
@@ -75,7 +75,7 @@ function PhotoSlider() {
             <div className="slide p-3">
               <div
                 // onClick={() => setIndexAndOpen(index)}
-                className='h-60 gallery-photo bg-center bg-cover rounded-lg'
+                className='gallery-photo bg-center bg-cover rounded-lg h-60 sm:h-80 lg:h-80 xl:h-96 mx-12 md:mx-0'
                 style={{ backgroundImage: `url('${photo.path}')` }}
                 alt={photo.label}
                 key={photo.label}
