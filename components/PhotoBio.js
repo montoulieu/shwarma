@@ -12,40 +12,39 @@ function PhotoBio() {
           className="rounded-full shadow-md"
         />
       </div>
-      <div className="md:w-1/2 text-white flex justify-center flex-col pl-12">
-        <h2 className="text-xl font-bold text-purple-300">About</h2>
-        <div className="mb-10 font-light text-purple-200">
+      <div className="md:w-1/2 text-white flex justify-center flex-col md:pl-12">
+        <h2 className="heading font-bubblegum">About</h2>
+        <div className="mb-10 font-light text-white">
           <p>shwarma is an experimental psychedelic rock band hailing from Denver, Colorado.</p>
           <p>asdlfjnasldivjnaslidfbasd fasld aslkdfj an skdljfb lasdjfbalsdbfasldjhfb asjldhfb</p>
         </div>
-        <h2 className="text-xl font-bold text-purple-300">Members</h2>
-        <ul className="text-purple-200">
+        <h2 className="heading font-bubblegum">Members</h2>
+        <ul className="text-white">
           <li>
-            Pieter Montoulieu – guitar, vocals
+            <strong>Pieter Montoulieu</strong>
             {' '}
-            <small>(2015-present)</small>
+            <small> – guitar, vocals (2015-present)</small>
           </li>
           <li>
-            Jackson Kaufman – guitar, vocals
+            <strong>Jackson Kaufman</strong>
             {' '}
-            <small>(2015-present)</small>
+            <small> – guitar, vocals (2015-present)</small>
           </li>
           <li>
-            Steve Sanchez – drums, backing vocals
+            <strong>Steve Sanchez</strong>
             {' '}
-            <small>(2015-present)</small>
+            <small> – drums, backing vocals (2015-present)</small>
           </li>
           <li>
-            Dalton Groves – keys, backing vocals
+            <strong>Dalton Groves</strong>
             {' '}
-            <small>(2019–present)</small>
+            <small> – keys, backing vocals (2019–present)</small>
           </li>
           <li>
-            Kevin Schultz – bass, backing vocals
+            <strong>Kevin Schultz</strong>
             {' '}
-            <small>(2019–present)</small>
+            <small> – bass, backing vocals (2019–present)</small>
           </li>
-
         </ul>
       </div>
     </div>

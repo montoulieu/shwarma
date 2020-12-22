@@ -8,11 +8,7 @@
 
 html,
 body {
-  @apply bg-purple-900 h-full;
-}
-
-#__next {
-  @apply h-full;
+  @apply bg-gradient-to-b from-purple-900 to-pink-500;
 }
 
 .font-bubblegum {
@@ -40,4 +36,11 @@ body {
   .contact {
     transform: rotateZ(-3deg) translate(-15%, -100%);
   }
+}
+
+.heading {
+  @apply text-5xl font-bold text-purple-300;
+}
+.subheading {
+  @apply text-xl font-bold text-white;
 }

@@ -5,8 +5,8 @@ function MainHeader() {
     <div className="text-white text-center mb-auto py-8">
       <Image
         src="/images/logo-shwarma.png"
-        height="81px"
-        width="160px"
+        height="101px"
+        width="180px"
         alt="melted shwarma logo"
       />
     </div>

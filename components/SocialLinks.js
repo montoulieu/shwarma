@@ -1,5 +1,7 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSpotify, faApple, faAmazon, faBandcamp, faYoutube, faDeezer, faFacebook, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faSpotify, faApple, faAmazon, faBandcamp, faYoutube, faDeezer, faFacebook, faInstagram, faTwitter,
+} from '@fortawesome/free-brands-svg-icons';
 
 function SocialLinks() {
   const musicPlatforms = [
@@ -37,8 +39,8 @@ function SocialLinks() {
       icon: faDeezer,
       label: 'Deezer',
       link: 'https://www.deezer.com/en/artist/14902845',
-    }
-  ]
+    },
+  ];
 
   const socialPlatforms = [
     {
@@ -55,34 +57,58 @@ function SocialLinks() {
       icon: faTwitter,
       label: 'Twitter',
       link: 'https://twitter.com/shwarmadelica',
-    }
-  ]
+    },
+  ];
   return (
     <div>
-      <div className="music-links">
+      <div className="music-links mb-4">
         <ul className="flex flex-wrap justify-center">
-          {musicPlatforms.map((platform) =>
-            <li key={platform.label}>
-              <a href={platform.link}>
-                <FontAwesomeIcon className="text-2xl mr-2 text-primary" icon={platform.icon} />
+          {musicPlatforms.map((platform) => (
+            <li
+              key={platform.label}
+              className="px-2"
+            >
+              <a
+                href={platform.link}
+                target="_blank"
+                rel="noreferrer"
+                className="text-purple-300"
+              >
+                <FontAwesomeIcon
+                  className="mr-2 text-primary"
+                  icon={platform.icon}
+                  size="2x"
+                />
               </a>
             </li>
-          )}
+          ))}
         </ul>
       </div>
       <div className="social-links">
         <ul className="flex flex-wrap justify-center">
-          {socialPlatforms.map((platform) =>
-            <li key={platform.label}>
-              <a href={platform.link}>
-                <FontAwesomeIcon className="text-2xl mr-2 text-primary" icon={platform.icon} />
+          {socialPlatforms.map((platform) => (
+            <li
+              key={platform.label}
+              className="px-2"
+            >
+              <a
+                href={platform.link}
+                target="_blank"
+                rel="noreferrer"
+                className="text-purple-300"
+              >
+                <FontAwesomeIcon
+                  className="mr-2 text-primary"
+                  icon={platform.icon}
+                  size="2x"
+                />
               </a>
             </li>
-          )}
+          ))}
         </ul>
       </div>
     </div>
-  )
+  );
 }
 
-export default SocialLinks
+export default SocialLinks;
