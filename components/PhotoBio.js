@@ -41,7 +41,7 @@ function PhotoBio() {
         <h2 className="heading font-bubblegum">About</h2>
         <div className="mb-10 font-light text-white text-xl">
           <p className="mb-2">shwarma is an experimental psychedelic and progressive rock band hailing from Denver, Colorado.</p>
-          <p>Born out of a desire to play whatever style we felt like trying, and always with an appreciation for the greats that have come before to inspire us.</p>
+          <p>Born out of a desire to play whatever style we feel like trying, and always with an appreciation for the greats that have inspired us.</p>
         </div>
         <h2 className="heading font-bubblegum">Members</h2>
         <ul className="text-white">
