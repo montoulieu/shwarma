@@ -31,7 +31,7 @@ export default function Home() {
         }}
       />
       <Head>
-        <title>shwarma</title>
+        <title>shwarma - denver psych rock</title>
         <link
           rel="icon"
           href="/favicon.ico"
