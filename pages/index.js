@@ -5,7 +5,7 @@ import SocialLinks from '@components/SocialLinks';
 
 export default function Home() {
   return (
-    <div className=" h-full">
+    <div className="h-full">
       <Head>
         <title>shwarma</title>
         <link
