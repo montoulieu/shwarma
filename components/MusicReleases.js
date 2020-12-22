@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { faApple, faBandcamp, faSpotify } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -78,11 +77,12 @@ function MusicReleases() {
         {releases.map((release) => (
           <li>
             <div className="text-center">
-              <Image
+              <img
                 src={release.image}
                 height="512"
                 width="512"
                 className="rounded-lg shadow-lg cursor-pointer"
+                alt={`${release.name} album cover`}
                 onClick={() => openBandcampEmbedWindow(release.embedID)}
               />
             </div>

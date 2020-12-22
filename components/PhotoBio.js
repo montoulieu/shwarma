@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 function PhotoBio() {
   const bandMembers = [
     {
@@ -31,7 +29,7 @@ function PhotoBio() {
   return (
     <div className="md:flex px-4 md:px-0">
       <div className="md:w-1/2 text-center mb-5 md:mb-0 ">
-        <Image
+        <img
           src="/images/shred-shwarma-sm.jpg"
           height="500px"
           width="500px"
