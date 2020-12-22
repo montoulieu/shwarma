@@ -1,5 +1,47 @@
 [
   {
+    "genre": "Weirdo Rock",
+    "title": "Pod Dweller",
+    "album": 1418255605,
+    "track": 2268209796
+  },
+  {
+    "genre": "Clean Psychedelic",
+    "title": "How Didja Know",
+    "album": 1418255605,
+    "track": 1238971209
+  },
+  {
+    "genre": "Middle Eastern",
+    "title": "Spaghetti Haus",
+    "album": 1418255605,
+    "track": 3623608974
+  },
+  {
+    "genre": "Divorce Rock",
+    "title": "Happiness",
+    "album": 1418255605,
+    "track": 1316805980
+  },
+  {
+    "genre": "Spanish Rock",
+    "title": "Moldelo",
+    "album": 1418255605,
+    "track": 2275809623
+  },
+  {
+    "genre": "Brown Fuzz",
+    "title": "Fuzznuts",
+    "album": 2712994336,
+    "track": 1664075095
+  },
+  {
+    "genre": "Aquatic Rock",
+    "title": "Eel Fingers",
+    "album": 2712994336,
+    "track": 1664075095
+  },
+  {
     "genre": "Punk Rock",
     "title": "You Can't Leave Me",
     "album": 1195944678,
