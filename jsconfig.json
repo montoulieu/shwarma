@@ -2,9 +2,18 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-      "@components/*": ["components/*"],
-      "@hooks/*": ["hooks/*"],
-      "@utils/*": ["utils/*"]
+      "@components/*": [
+        "components/*"
+      ],
+      "@hooks/*": [
+        "hooks/*"
+      ],
+      "@utils/*": [
+        "utils/*"
+      ],
+      "@slider/*": [
+        "public/slider/"
+      ]
     },
   },
   "exclude": [
