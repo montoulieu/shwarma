@@ -16,7 +16,7 @@ export default function Home() {
         openGraph={{
           url: 'https://www.shwarma.band',
           title: 'shwarma - denver psych rock',
-          description: 'Open Graph Description',
+          description: 'shwarma is an experimental psychedelic and progressive rock band hailing from Denver, Colorado.',
           images: [
             {
               url: '/images/shred-shwarma-sm.jpg',
