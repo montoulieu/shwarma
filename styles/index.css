@@ -1,0 +1,52 @@
+@import url("https://use.typekit.net/cgj7ajr.css");
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+html,
+body {
+  @apply bg-gradient-to-br from-purple-900 to-fuchsia-500;
+}
+
+.font-bubblegum {
+  font-family: bubblegum-pop-vanilla, sans-serif;
+}
+
+.nav-links {
+  .nav-link {
+  }
+  .home {
+    transform: rotateZ(3deg);
+  }
+  .news {
+    transform: rotateZ(-5deg) translate(0%, -30%) scale(1.1);
+  }
+  .band {
+    transform: rotateZ(15deg) translate(30%, -40%);
+  }
+  .music {
+    transform: rotateZ(-15deg) translate(0%, -70%) scale(1.3);
+  }
+  .media {
+    transform: rotateZ(5deg) translate(15%, -80%);
+  }
+  .contact {
+    transform: rotateZ(-3deg) translate(-15%, -100%);
+  }
+}
+
+.heading {
+  text-shadow: 0px 0px 5px rgba(0,0,0,0.35);
+  @apply text-5xl font-bold text-fuchsia-400;
+}
+
+.subheading {
+  @apply text-2xl font-extrabold text-purple-100 tracking-wider;
+}
+
+.pink-hover {
+  @apply text-fuchsia-300 hover:text-fuchsia-400 transition-colors duration-200;
+}

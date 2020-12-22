@@ -1,65 +1,43 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from 'next/head';
+import MainHeader from '@components/MainHeader';
+import PhotoBio from '@components/PhotoBio';
+import SocialLinks from '@components/SocialLinks';
+import LatestLivestream from '@components/LatestLivestream';
+import MusicReleases from '@components/MusicReleases';
+import GalleryPhotos from '@components/GalleryPhotos';
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div className="h-full">
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>shwarma</title>
+        <link
+          rel="icon"
+          href="/favicon.ico"
+        />
       </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
+      <main className="container mx-auto">
+        <MainHeader />
+        <PhotoBio />
+        <SocialLinks />
+        <MusicReleases />
+        <LatestLivestream />
+        <GalleryPhotos />
+        <footer className="flex flex-col items-center text-fuchsia-100 pb-5">
           <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
+            href="mailto:shwarmaband@gmail.com"
+            className="mx-auto mb-2 border border-pink-200 pink-hover hover:bg-pink-200 hover:bg-opacity-10 p-2 rounded-lg"
           >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
+            Contact
           </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+          <small>
+            shwarma (2017 -
+            {' '}
+            {new Date().getFullYear()}
+            )
+          </small>
+        </footer>
       </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
     </div>
-  )
+  );
 }

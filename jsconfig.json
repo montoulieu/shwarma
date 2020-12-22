@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@components/*": [
+        "components/*"
+      ],
+      "@hooks/*": [
+        "hooks/*"
+      ],
+      "@utils/*": [
+        "utils/*"
+      ],
+      "@slider/*": [
+        "public/slider/"
+      ]
+    },
+  },
+  "exclude": [
+    "node_modules",
+    "out",
+    ".vscode",
+    ".next",
+  ]
+}
