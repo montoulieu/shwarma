@@ -1,7 +1,7 @@
 function LatestLivestream() {
   return (
-    <div className="pb-5 px-3">
-      <h2 className="heading font-bubblegum mb-3">Latest Livestream</h2>
+    <div className="py-10 px-3 md:px-0">
+      <h2 className="heading font-bubblegum mb-5">Latest Livestream</h2>
       <div className="md:flex items-center">
         <iframe
           width="560"

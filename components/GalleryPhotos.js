@@ -67,7 +67,7 @@ function PhotoSlider() {
   }
 
   return (
-    <div className="photo-gallery py-5 px-4 md:px-0">
+    <div className="photo-gallery py-5 px-3 md:px-0">
       <h2 className="heading font-bubblegum mb-3">Photo Gallery</h2>
       <div className="slider">
         <Slider {...settings}>

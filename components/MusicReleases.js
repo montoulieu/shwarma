@@ -71,20 +71,24 @@ function MusicReleases() {
   }
 
   return (
-    <div className="px-4 md:px-0 pb-10">
-      <h2 className="heading font-bubblegum mb-3">Music Releases</h2>
+    <div className="px-3 md:px-0 pb-10">
+      <h2 className="heading font-bubblegum mb-5">Music Releases</h2>
       <ul className="grid md:grid-cols-3 gap-6 ">
         {releases.map((release) => (
-          <li>
-            <div className="text-center">
-              <img
-                src={release.image}
-                height="512"
-                width="512"
-                className="rounded-3xl shadow-lg cursor-pointer"
-                alt={`${release.name} album cover`}
+          <li className="pb-5">
+            <div className="text-center mb-4">
+              <button
                 onClick={() => openBandcampEmbedWindow(release.embedID)}
-              />
+                type="button"
+              >
+                <img
+                  src={release.image}
+                  height="512"
+                  width="512"
+                  className="rounded-3xl shadow-lg cursor-pointer"
+                  alt={`${release.name} album cover`}
+                />
+              </button>
             </div>
             <div className="flex py-2">
               <h3 className="subheading">
