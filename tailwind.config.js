@@ -2,9 +2,8 @@ const colors = require('./node_modules/tailwindcss/colors');
 
 module.exports = {
   purge: [
-    './src/**/*.html',
-    './src/**/*.vue',
-    './src/**/*.jsx',
+    './components/**/*.js',
+    './pages/**/*.js',
   ],
   theme: {
     extend: {
