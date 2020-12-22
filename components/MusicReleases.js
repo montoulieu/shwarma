@@ -81,7 +81,7 @@ function MusicReleases() {
                 src={release.image}
                 height="512"
                 width="512"
-                className="rounded-lg shadow-lg cursor-pointer"
+                className="rounded-3xl shadow-lg cursor-pointer"
                 alt={`${release.name} album cover`}
                 onClick={() => openBandcampEmbedWindow(release.embedID)}
               />

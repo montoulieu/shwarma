@@ -34,10 +34,10 @@ function PhotoBio() {
           height="500px"
           width="500px"
           alt="shwarma playing live at toads tavern"
-          className="rounded-full shadow-md"
+          className="rounded-3xl shadow-md mx-auto"
         />
       </div>
-      <div className="md:w-1/2 text-white flex justify-center flex-col md:pl-12">
+      <div className="md:w-1/2 xl:w-1/3 text-white flex justify-center flex-col md:pl-4 lg:pl-12">
         <h2 className="heading font-bubblegum">About</h2>
         <div className="mb-10 font-light text-white text-xl">
           <p className="mb-2">shwarma is an experimental psychedelic and progressive rock band hailing from Denver, Colorado.</p>
