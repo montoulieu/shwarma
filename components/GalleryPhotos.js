@@ -75,7 +75,7 @@ function PhotoSlider() {
             <div className="slide p-3">
               <div
                 // onClick={() => setIndexAndOpen(index)}
-                className='gallery-photo bg-center bg-cover rounded-lg h-60 sm:h-80 lg:h-80 xl:h-96 mx-12 md:mx-0'
+                className='gallery-photo bg-center bg-cover rounded-lg w-full h-60 sm:h-80 lg:h-80 xl:h-96'
                 style={{ backgroundImage: `url('${photo.path}')` }}
                 alt={photo.label}
                 key={photo.label}
