@@ -76,7 +76,6 @@ function SocialLinks() {
                 title={platform.label}
               >
                 <FontAwesomeIcon
-                  className="mr-2 text-primary"
                   icon={platform.icon}
                   size="2x"
                 />
@@ -100,7 +99,6 @@ function SocialLinks() {
                 title={platform.label}
               >
                 <FontAwesomeIcon
-                  className="mr-2 text-primary"
                   icon={platform.icon}
                   size="2x"
                 />

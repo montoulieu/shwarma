@@ -39,12 +39,13 @@ body {
 }
 
 .heading {
-  @apply text-5xl font-bold text-pink-400;
+  text-shadow: 0px 0px 5px rgba(0,0,0,0.35);
+  @apply text-5xl font-bold text-fuchsia-400;
 }
 .subheading {
   @apply text-xl font-bold text-purple-100;
 }
 
 .pink-hover {
-  @apply text-pink-400 hover:text-pink-200 transition-colors duration-200;
+  @apply text-fuchsia-300 hover:text-fuchsia-400 transition-colors duration-200;
 }
