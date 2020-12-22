@@ -6,8 +6,8 @@ function MainHeader() {
       >
         <img
           src="/images/logo-shwarma.png"
-          height="101px"
-          width="180px"
+          height="121px"
+          width="200px"
           alt="melted shwarma logo"
         />
       </div>
