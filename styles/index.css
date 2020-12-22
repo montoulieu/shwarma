@@ -8,7 +8,7 @@
 
 html,
 body {
-  @apply bg-gradient-to-b from-purple-900 to-pink-500;
+  @apply bg-gradient-to-br from-purple-900 to-fuchsia-500;
 }
 
 .font-bubblegum {
@@ -39,8 +39,12 @@ body {
 }
 
 .heading {
-  @apply text-5xl font-bold text-purple-300;
+  @apply text-5xl font-bold text-pink-400;
 }
 .subheading {
-  @apply text-xl font-bold text-white;
+  @apply text-xl font-bold text-purple-100;
+}
+
+.pink-hover {
+  @apply text-pink-400 hover:text-pink-200 transition-colors duration-200;
 }

@@ -72,7 +72,8 @@ function SocialLinks() {
                 href={platform.link}
                 target="_blank"
                 rel="noreferrer"
-                className="text-purple-300"
+                className="pink-hover"
+                title={platform.label}
               >
                 <FontAwesomeIcon
                   className="mr-2 text-primary"
@@ -95,7 +96,8 @@ function SocialLinks() {
                 href={platform.link}
                 target="_blank"
                 rel="noreferrer"
-                className="text-purple-300"
+                className="pink-hover"
+                title={platform.label}
               >
                 <FontAwesomeIcon
                   className="mr-2 text-primary"
