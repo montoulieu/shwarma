@@ -5,10 +5,31 @@ import SocialLinks from '@components/SocialLinks';
 import LatestLivestream from '@components/LatestLivestream';
 import MusicReleases from '@components/MusicReleases';
 import GalleryPhotos from '@components/GalleryPhotos';
+import { NextSeo } from 'next-seo';
 
 export default function Home() {
   return (
     <div className="h-full">
+      <NextSeo
+        title="shwarma - denver psych rock"
+        description="shwarma is an experimental psychedelic and progressive rock band hailing from Denver, Colorado."
+        openGraph={{
+          url: 'https://www.shwarma.band',
+          title: 'shwarma - denver psych rock',
+          description: 'Open Graph Description',
+          images: [
+            {
+              url: '/images/shred-shwarma-sm.jpg',
+              alt: 'shwarma live',
+            },
+          ],
+        }}
+        twitter={{
+          handle: '@shwarmadelica',
+          site: '@shwarmadelica',
+          cardType: 'summary_large_image',
+        }}
+      />
       <Head>
         <title>shwarma</title>
         <link
