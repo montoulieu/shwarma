@@ -8,6 +8,7 @@ function MusicReleases() {
       name: 'Emily\'s Aparments',
       year: 2020,
       image: 'https://f4.bcbits.com/img/a0616848912_16.jpg',
+      embedID: 1195944678,
       links: [
         {
           icon: faBandcamp,
@@ -27,6 +28,7 @@ function MusicReleases() {
       name: 'The Briny Deep',
       year: 2018,
       image: 'https://f4.bcbits.com/img/a2680474440_16.jpg',
+      embedID: 2712994336,
       links: [
         {
           icon: faBandcamp,
@@ -46,6 +48,7 @@ function MusicReleases() {
       name: 'Angular EP',
       year: 2017,
       image: 'https://f4.bcbits.com/img/a1946338181_16.jpg',
+      embedID: 1418255605,
       links: [
         {
           icon: faBandcamp,
@@ -62,6 +65,12 @@ function MusicReleases() {
       ],
     },
   ];
+
+  function openBandcampEmbedWindow(id) {
+    const params = 'scrollbars=no,resizable=no,status=no,location=no,toolbar=no,menubar=no, width=320,height=800,left=0,top=0';
+    window.open(`https://bandcamp.com/EmbeddedPlayer/album=${id}/size=large/bgcol=212324/linkcol=098af8/transparent=true/`, 'test', params);
+  }
+
   return (
     <div className="px-4 md:px-0">
       <h2 className="heading font-bubblegum mb-3">Music Releases</h2>
@@ -72,7 +81,8 @@ function MusicReleases() {
               src={release.image}
               height="512"
               width="512"
-              className="rounded-lg shadow-lg"
+              className="rounded-lg shadow-lg cursor-pointer"
+              onClick={() => openBandcampEmbedWindow(release.embedID)}
             />
             <div className="flex py-2">
               <h3 className="subheading">{release.name}</h3>
