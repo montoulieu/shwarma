@@ -50,3 +50,7 @@ body {
 .pink-hover {
   @apply text-fuchsia-300 hover:text-fuchsia-400 transition-colors duration-200;
 }
+
+.genre-picker {
+  min-height: -webkit-fill-available;
+}

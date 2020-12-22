@@ -2,7 +2,7 @@ function LatestLivestream() {
   return (
     <div className="pb-5 px-3">
       <h2 className="heading font-bubblegum mb-3">Latest Livestream</h2>
-      <div className="md:flex">
+      <div className="md:flex items-center">
         <iframe
           width="560"
           height="315"
@@ -11,14 +11,14 @@ function LatestLivestream() {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
           title="Latest Livestream"
-          className="w-full md:w-2/3 h-52 md:h-96 mb-5 md:mb-0"
+          className="w-full md:w-1/2 h-52 md:h-96 mb-5 md:mb-0"
         />
-        <div className="md:w-1/3 md:pl-10 text-fuchsia-100">
+        <div className="md:w-1/2 md:pl-10 text-xl text-fuchsia-100">
           <p className="mb-3">
-            The album release for shwarma's second album,
+            The album release livestream for shwarma's second album,
             {' '}
             <a
-              href="#"
+              href="https://shwarma.bandcamp.com/album/emilys-aparments"
               target="_blank"
               rel="noreferrer"
             >

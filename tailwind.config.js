@@ -6,6 +6,12 @@ module.exports = {
     './pages/**/*.js',
   ],
   theme: {
+    height: (theme) => ({
+      auto: 'auto',
+      ...theme('spacing'),
+      full: '100%',
+      screen: 'calc(var(--vh) * 100)',
+    }),
     extend: {
       colors: {
         rose: colors.rose,
