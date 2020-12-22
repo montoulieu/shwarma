@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "export": "next build; next export"
+    "postbuild": "next-on-netlify"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
@@ -15,6 +15,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
     "@fortawesome/react-fontawesome": "^0.1.11",
     "next": "^10.0.0",
+    "next-on-netlify": "^2.6.3",
     "postcss-import": "^12.0.1",
     "postcss-nested": "^4.2.3",
     "react": "^17.0.0",
