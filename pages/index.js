@@ -3,6 +3,7 @@ import MainHeader from '@components/MainHeader';
 import PhotoBio from '@components/PhotoBio';
 import SocialLinks from '@components/SocialLinks';
 import MusicReleases from '@components/MusicReleases';
+import GalleryPhotos from '@components/GalleryPhotos';
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <SocialLinks />
         <PhotoBio />
         <MusicReleases />
+        <GalleryPhotos />
       </main>
     </div>
   );
