@@ -34,7 +34,7 @@ function LatestLivestream() {
             </a>
             .
           </p>
-          <p className="mb-3">Filled with choice cuts from the album as well as many mysterious happenings like Jackson finding out he has a son, bassmaster Kevin getting abducted by aliens while taking a piss, and Steve's ticking time bomb drumset thats set to blow when the beat stops.</p>
+          <p className="mb-3">Filled with choice cuts from the album as well as many mysterious happenings like Jackson finding out he has a son, bassmaster Kevin getting abducted by aliens while taking a piss, and Steve&apos;s ticking time bomb drumset thats set to blow when the beat stops.</p>
           <p>Filmed live at Turbo Snail during the summer of 2020</p>
         </div>
       </div>
