@@ -23,14 +23,14 @@ function LatestLivestream() {
         />
         <div className="md:w-1/2 md:pl-10 text-xl text-fuchsia-100">
           <p className="mb-3">
-            The album release livestream for shwarma's second album,
+            The album release livestream for shwarma&apos;s second album,
             {' '}
             <a
               href="https://shwarma.bandcamp.com/album/emilys-aparments"
               target="_blank"
               rel="noreferrer"
             >
-              Emily's Aparments
+              Emily&apos;s Aparments
             </a>
             .
           </p>
