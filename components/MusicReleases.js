@@ -11,14 +11,17 @@ function MusicReleases() {
       links: [
         {
           icon: faBandcamp,
+          name: 'Bandcamp',
           url: 'https://shwarma.bandcamp.com/album/emilys-aparments',
         },
         {
           icon: faSpotify,
+          name: 'Spotify',
           url: 'https://open.spotify.com/album/5ffzN9nN2m49DgNhCCvKqg',
         },
         {
           icon: faApple,
+          name: 'Apple Music',
           url: 'https://music.apple.com/us/album/emilys-aparments/1507941253',
         },
       ],
@@ -31,14 +34,17 @@ function MusicReleases() {
       links: [
         {
           icon: faBandcamp,
+          name: 'Bandcamp',
           url: 'https://shwarma.bandcamp.com/album/the-briny-deep',
         },
         {
           icon: faSpotify,
+          name: 'Spotify',
           url: 'https://open.spotify.com/album/400Kvbo0Ss35bk3iuOCKnf',
         },
         {
           icon: faApple,
+          name: 'Apple Music',
           url: 'https://music.apple.com/us/album/the-briny-deep/1390300526',
         },
       ],
@@ -51,14 +57,17 @@ function MusicReleases() {
       links: [
         {
           icon: faBandcamp,
+          name: 'Bandcamp',
           url: 'https://shwarma.bandcamp.com/album/angular-ep',
         },
         {
           icon: faSpotify,
+          name: 'Spotify',
           url: 'https://open.spotify.com/album/6O97C6axHK3yxNZ4mJJ9gs',
         },
         {
           icon: faApple,
+          name: 'Apple Music',
           url: 'https://music.apple.com/us/album/angular-ep/1390956650',
         },
       ],
@@ -93,23 +102,23 @@ function MusicReleases() {
                 />
               </button>
             </div>
-            <div className="flex py-2">
+            <div className=" py-2">
               <h3 className="subheading">
                 {release.name}
-                {' '}
-                (
+              </h3>
+              <h3 className="subheading">
                 {release.year}
-                )
               </h3>
             </div>
-            <div>
+            <div className="flex items-center">
+              <p className="text-pink-200 mr-2 font-light uppercase">Listen on:</p>
               <ul className="flex items-center">
-                <p className="text-pink-200 mr-2 font-light uppercase">Listen on:</p>
                 {release.links.map((link) => (
                   <li key={link.url}>
                     <a
                       href={link.url}
                       className="px-1 pink-hover"
+                      title={link.name}
                       target="_blank"
                       rel="noreferrer"
                     >

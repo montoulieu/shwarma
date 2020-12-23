@@ -79,6 +79,7 @@ function PhotoSlider() {
               <img
                 src={photo.path}
                 className="rounded-3xl w-full"
+                alt={photo.label}
               />
             </div>
           ))}
