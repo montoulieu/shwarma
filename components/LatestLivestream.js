@@ -3,7 +3,9 @@ import { useEffect } from 'react';
 function LatestLivestream() {
   useEffect(() => {
     const deferredVideo = document.getElementsByTagName('iframe')[0];
-    deferredVideo.setAttribute('src', deferredVideo.getAttribute('data-src'));
+    setTimeout(() => {
+      deferredVideo.setAttribute('src', deferredVideo.getAttribute('data-src'));
+    }, 2000);
   }, []);
   return (
     <div className="py-10 px-3 md:px-0">
