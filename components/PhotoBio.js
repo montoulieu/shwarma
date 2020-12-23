@@ -1,8 +1,6 @@
 function PhotoBio({ headingFirst, headingSecond, bandMembers }) {
   return (
     <div className="md:flex px-3 md:px-0">
-      <button onClick={() => console.log(props)}>Test</button>
-
       <div className="md:w-1/2 text-center mb-5 md:mb-0 ">
         <img
           src="/images/shred-shwarma-sm.jpg"

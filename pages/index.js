@@ -40,7 +40,6 @@ export default function Home({ bandMembers, headingFirst, headingSecond }) {
       </Head>
       <main className="container mx-auto">
         <MainHeader />
-        <button onClick={() => console.log(bandMembers)}>Test</button>
         <PhotoBio
           headingFirst={headingFirst}
           headingSecond={headingSecond}
