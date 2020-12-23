@@ -75,7 +75,10 @@ function MusicReleases() {
       <h2 className="heading font-bubblegum mb-5">Music Releases</h2>
       <ul className="grid md:grid-cols-3 gap-6 ">
         {releases.map((release) => (
-          <li className="pb-5">
+          <li
+            className="pb-5"
+            key={release.name}
+          >
             <div className="text-center mb-4">
               <button
                 onClick={() => openBandcampEmbedWindow(release.embedID)}
@@ -103,7 +106,7 @@ function MusicReleases() {
               <ul className="flex items-center">
                 <p className="text-pink-200 mr-2 font-light uppercase">Listen on:</p>
                 {release.links.map((link) => (
-                  <li>
+                  <li key={link.url}>
                     <a
                       href={link.url}
                       className="px-1 pink-hover"

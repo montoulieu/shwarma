@@ -1,33 +1,8 @@
-function PhotoBio() {
-  const bandMembers = [
-    {
-      name: 'Pieter Montoulieu',
-      role: 'guitar, vocals',
-      time: '2015-present',
-    },
-    {
-      name: 'Jackson Kaufman',
-      role: 'guitar, vocals',
-      time: '2015-present',
-    },
-    {
-      name: 'Steve Sanchez',
-      role: 'drums, backing vocals',
-      time: '2015-present',
-    },
-    {
-      name: 'Dalton Groves',
-      role: 'keys, backing vocals',
-      time: '2018-present',
-    },
-    {
-      name: 'Kevin Schultz',
-      role: 'bass, backing vocals',
-      time: '2018-present',
-    },
-  ];
+function PhotoBio({ headingFirst, headingSecond, bandMembers }) {
   return (
     <div className="md:flex px-3 md:px-0">
+      <button onClick={() => console.log(props)}>Test</button>
+
       <div className="md:w-1/2 text-center mb-5 md:mb-0 ">
         <img
           src="/images/shred-shwarma-sm.jpg"
@@ -40,13 +15,15 @@ function PhotoBio() {
       <div className="md:w-1/2 xl:w-1/3 text-white flex justify-center flex-col md:pl-4 lg:pl-12 py-4 md:py-0 ">
         <h2 className="heading font-bubblegum">About</h2>
         <div className="mb-10 font-light text-white text-xl">
-          <p className="mb-2">shwarma is an experimental psychedelic and progressive rock band hailing from Denver, Colorado.</p>
-          <p>Born out of a desire to play whatever style we feel like trying, and always with an appreciation for the greats that have inspired us.</p>
+          <p className="mb-2">{headingFirst}</p>
+          <p>{headingSecond}</p>
         </div>
         <h2 className="heading font-bubblegum">Members</h2>
+        {bandMembers
+        && (
         <ul className="text-white">
           {bandMembers.map((member) => (
-            <li>
+            <li key={member.name}>
               <strong>{member.name}</strong>
               {' '}
               <small>
@@ -58,6 +35,7 @@ function PhotoBio() {
             </li>
           ))}
         </ul>
+        )}
       </div>
     </div>
   );

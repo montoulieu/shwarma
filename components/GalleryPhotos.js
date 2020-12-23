@@ -72,7 +72,7 @@ function PhotoSlider() {
       <div className="slider">
         <Slider {...settings}>
           {photos.map((photo) =>
-            <div className="slide p-3">
+            <div className="slide p-3" key={photo.label}>
               <div
                 // onClick={() => setIndexAndOpen(index)}
                 className='gallery-photo bg-center bg-cover rounded-3xl w-full h-60 sm:h-80 lg:h-80 xl:h-96'

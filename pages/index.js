@@ -6,8 +6,9 @@ import LatestLivestream from '@components/LatestLivestream';
 import MusicReleases from '@components/MusicReleases';
 import GalleryPhotos from '@components/GalleryPhotos';
 import { NextSeo } from 'next-seo';
+import bandMembersJson from '../json/bandMembers';
 
-export default function Home() {
+export default function Home({ bandMembers, headingFirst, headingSecond }) {
   return (
     <div className="h-full">
       <NextSeo
@@ -39,7 +40,12 @@ export default function Home() {
       </Head>
       <main className="container mx-auto">
         <MainHeader />
-        <PhotoBio />
+        <button onClick={() => console.log(bandMembers)}>Test</button>
+        <PhotoBio
+          headingFirst={headingFirst}
+          headingSecond={headingSecond}
+          bandMembers={bandMembers}
+        />
         <SocialLinks />
         <MusicReleases />
         <LatestLivestream />
@@ -61,4 +67,14 @@ export default function Home() {
       </main>
     </div>
   );
+}
+
+export async function getStaticProps({ params }) {
+  return {
+    props: {
+      headingFirst: 'shwarma is an experimental psychedelic and progressive rock band hailing from Denver, Colorado.',
+      headingSecond: 'Born out of a desire to play whatever style we feel like trying, and always with an appreciation for the greats that have inspired us.',
+      ...bandMembersJson,
+    },
+  };
 }
