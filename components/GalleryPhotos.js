@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import Slider from 'react-slick'
+import React, { useState } from 'react';
+import Slider from 'react-slick';
 
 function PhotoSlider() {
   const photos = [
@@ -26,8 +26,8 @@ function PhotoSlider() {
     {
       label: 'Rage Squared',
       path: '/images/slider/ragesquared.jpg',
-    }
-  ]
+    },
+  ];
   const settings = {
     dots: false,
     speed: 100,
@@ -42,51 +42,50 @@ function PhotoSlider() {
         breakpoint: 1023,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 1
-        }
+          slidesToScroll: 1,
+        },
       },
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1
-        }
+          slidesToScroll: 1,
+        },
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
-  }
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
 
   const divStyle = {
     minHeight: '460px',
-  }
+  };
 
   return (
     <div className="photo-gallery py-5 px-3 md:px-0">
       <h2 className="heading font-bubblegum mb-3">Photo Gallery</h2>
       <div className="slider">
         <Slider {...settings}>
-          {photos.map((photo) =>
-            <div className="slide p-3" key={photo.label}>
-              <div
-                // onClick={() => setIndexAndOpen(index)}
-                className='gallery-photo bg-center bg-cover rounded-3xl w-full h-60 sm:h-80 lg:h-80 xl:h-96'
-                style={{ backgroundImage: `url('${photo.path}')` }}
-                alt={photo.label}
-                key={photo.label}
-              >
-              </div>
+          {photos.map((photo) => (
+            <div
+              className="slide p-3"
+              key={photo.label}
+            >
+              <img
+                src={photo.path}
+                className="rounded-3xl w-full"
+              />
             </div>
-          )}
+          ))}
         </Slider>
       </div>
     </div>
-  )
+  );
 }
 
-export default PhotoSlider
+export default PhotoSlider;
