@@ -52,7 +52,7 @@ export default function Home({ bandMembers, headingFirst, headingSecond }) {
         <footer className="flex flex-col items-center text-fuchsia-100 pb-5">
           <a
             href="mailto:shwarmaband@gmail.com"
-            className="mx-auto mb-4 border border-pink-200 pink-hover hover:bg-pink-200 hover:bg-opacity-10 p-2 rounded-lg"
+            className="mx-auto mb-6 border border-pink-200 pink-hover hover:bg-pink-200 hover:bg-opacity-10 p-2 rounded-lg"
           >
             Contact
           </a>

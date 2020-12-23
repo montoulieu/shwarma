@@ -30,7 +30,7 @@ function PhotoSlider() {
   ];
   const settings = {
     dots: false,
-    speed: 100,
+    speed: 1000,
     arrows: false,
     autoplay: true,
     slidesToShow: 3,
