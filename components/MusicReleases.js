@@ -99,6 +99,7 @@ function MusicReleases() {
                   width="512"
                   className="rounded-3xl shadow-lg cursor-pointer"
                   alt={`${release.name} album cover`}
+                  loading="lazy"
                 />
               </button>
             </div>

@@ -1,4 +1,10 @@
+import { useEffect } from 'react';
+
 function LatestLivestream() {
+  useEffect(() => {
+    const deferredVideo = document.getElementsByTagName('iframe')[0];
+    deferredVideo.setAttribute('src', deferredVideo.getAttribute('data-src'));
+  }, []);
   return (
     <div className="py-10 px-3 md:px-0">
       <h2 className="heading font-bubblegum mb-5">Latest Livestream</h2>
@@ -6,7 +12,7 @@ function LatestLivestream() {
         <iframe
           width="560"
           height="315"
-          src="https://www.youtube.com/embed/Ajtn2VI3Fug"
+          data-src="https://www.youtube.com/embed/Ajtn2VI3Fug"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen

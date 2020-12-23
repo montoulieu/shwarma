@@ -36,7 +36,7 @@ function PhotoSlider() {
     slidesToShow: 3,
     slidesToScroll: 3,
     pauseOnHover: true,
-    className: 'hover-gradient',
+    lazyLoad: true,
     responsive: [
       {
         breakpoint: 1023,
@@ -80,6 +80,7 @@ function PhotoSlider() {
                 src={photo.path}
                 className="rounded-3xl w-full"
                 alt={photo.label}
+                loading="lazy"
               />
             </div>
           ))}
