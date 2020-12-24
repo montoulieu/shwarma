@@ -35,7 +35,7 @@ export default function Home({ bandMembers, headingFirst, headingSecond }) {
         <title>shwarma - denver psych rock</title>
         <link
           rel="icon"
-          href="/favicon.ico"
+          href="/favicon.png"
         />
       </Head>
       <main className="container mx-auto">
