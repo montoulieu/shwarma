@@ -1,11 +1,13 @@
+import Image from 'next/image';
+
 function PhotoBio({ headingFirst, headingSecond, bandMembers }) {
   return (
     <div className="md:flex px-3 md:px-0">
       <div className="md:w-1/2 text-center mb-5 md:mb-0 ">
-        <img
+        <Image
           src="/images/shred-shwarma-sm.jpg"
-          height="500px"
-          width="500px"
+          height="512px"
+          width="512px"
           alt="shwarma playing live at toads tavern"
           className="rounded-3xl shadow-md mx-auto"
         />

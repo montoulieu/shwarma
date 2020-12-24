@@ -1,10 +1,12 @@
+import Image from 'next/image';
+
 function MainHeader() {
   return (
     <div className="flex items-center text-white mb-auto py-8 relative">
       <div
         className="mx-auto"
       >
-        <img
+        <Image
           src="/images/logo-shwarma.png"
           height="121px"
           width="200px"

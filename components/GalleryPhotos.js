@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Slider from 'react-slick';
+import Image from 'next/image';
 
 function PhotoSlider() {
   const photos = [
@@ -76,11 +77,13 @@ function PhotoSlider() {
               className="slide p-3"
               key={photo.label}
             >
-              <img
+              <Image
                 src={photo.path}
                 className="rounded-3xl w-full"
                 alt={photo.label}
                 loading="lazy"
+                width="512px"
+                height="512px"
               />
             </div>
           ))}

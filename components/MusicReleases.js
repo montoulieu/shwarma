@@ -1,5 +1,6 @@
 import { faApple, faBandcamp, faSpotify } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Image from 'next/image';
 
 function MusicReleases() {
   const releases = [
@@ -93,7 +94,7 @@ function MusicReleases() {
                 onClick={() => openBandcampEmbedWindow(release.embedID)}
                 type="button"
               >
-                <img
+                <Image
                   src={release.image}
                   height="512"
                   width="512"
@@ -103,6 +104,7 @@ function MusicReleases() {
                 />
               </button>
             </div>
+
             <div className=" py-2">
               <h3 className="subheading">
                 {release.name}
@@ -111,6 +113,7 @@ function MusicReleases() {
                 {release.year}
               </h3>
             </div>
+
             <div className="flex items-center">
               <p className="text-pink-200 mr-2 font-light uppercase">Listen on:</p>
               <ul className="flex items-center">
