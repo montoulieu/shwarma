@@ -121,14 +121,14 @@ function MusicReleases() {
                   <li key={link.url}>
                     <a
                       href={link.url}
-                      className="px-1 pink-hover"
+                      className="inline-block px-2 pink-hover"
                       title={link.name}
                       target="_blank"
                       rel="noreferrer"
                     >
                       <FontAwesomeIcon
                         icon={link.icon}
-                        size="2x"
+                        height="2rem"
                       />
                     </a>
                   </li>
