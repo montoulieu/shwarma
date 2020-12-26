@@ -5,7 +5,7 @@ function LatestLivestream() {
     const deferredVideo = document.getElementsByTagName('iframe')[0];
     setTimeout(() => {
       deferredVideo.setAttribute('src', deferredVideo.getAttribute('data-src'));
-    }, 2000);
+    }, 1250);
   }, []);
   return (
     <div className="py-10 px-3 md:px-0">
@@ -14,12 +14,13 @@ function LatestLivestream() {
         <iframe
           width="560"
           height="315"
+          loading="lazy"
           data-src="https://www.youtube.com/embed/Ajtn2VI3Fug"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
           title="Latest Livestream"
-          className="w-full md:w-1/2 h-52 md:h-96 mb-5 md:mb-0"
+          className="w-full md:w-1/2 h-52 md:h-96 mb-5 md:mb-0 bg-purple-900 bg-opacity-20"
         />
         <div className="md:w-1/2 md:pl-10 text-xl text-fuchsia-100">
           <p className="mb-3">

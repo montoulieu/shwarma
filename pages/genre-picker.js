@@ -66,6 +66,7 @@ export default function GenrePicker() {
             src={`https://bandcamp.com/EmbeddedPlayer/album=${genreSongs[currentSong].album}/size=small/bgcol=212324/linkcol=098af8/track=${genreSongs[currentSong].track}/transparent=true/`}
             seamless
             title="bandcamp player"
+            loading="lazy"
             height="42px"
           />
           )}
