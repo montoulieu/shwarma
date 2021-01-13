@@ -54,3 +54,9 @@ body {
 .genre-picker {
   min-height: -webkit-fill-available;
 }
+
+.btn {
+  @apply border border-fuchsia-300 text-fuchsia-200 p-3 rounded-lg;
+  @apply hover:bg-fuchsia-300 hover:text-fuchsia-500;
+  @apply transition-colors duration-300;
+}

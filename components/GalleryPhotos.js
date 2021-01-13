@@ -5,29 +5,26 @@ import Image from 'next/image';
 function PhotoSlider() {
   const photos = [
     {
-      label: 'Dalton',
-      path: '/images/slider/dalton.jpg',
-    },
-    {
-      label: 'Jackson',
-      path: '/images/slider/jackson.jpg',
+      label: 'Band',
+      path: '/images/slider/band-loveworthy.jpg',
     },
     {
       label: 'Pieter',
-      path: '/images/slider/pieter.jpg',
+      path: '/images/slider/pieter-loveworthy.jpg',
+    },
+    {
+      label: 'Jackson',
+      path: '/images/slider/jackson-loveworthy.jpg',
     },
     {
       label: 'Steve',
-      path: '/images/slider/steve.jpg',
+      path: '/images/slider/steve-loveworthy.jpg',
     },
     {
-      label: 'Steve Tongue',
-      path: '/images/slider/stevedoinwhathedoes.jpg',
+      label: 'Dalton',
+      path: '/images/slider/dalton-loveworthy.jpg',
     },
-    {
-      label: 'Rage Squared',
-      path: '/images/slider/ragesquared.jpg',
-    },
+
   ];
   const settings = {
     dots: false,

@@ -7,4 +7,8 @@
     <loc>http://localhost:3000</loc>
     <changefreq>hourly</changefreq>
   </url>
+  <url>
+    <loc>http://localhost:3000/loveworthy-preview</loc>
+    <changefreq>hourly</changefreq>
+  </url>
 </urlset>

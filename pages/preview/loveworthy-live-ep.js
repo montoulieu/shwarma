@@ -1,4 +1,6 @@
-function LoveworthyPreview() {
+import Link from 'next/link';
+
+function LoveworthyLiveEP() {
   return (
     <div className="min-h-screen flex flex-col content-center justify-center text-center text-white p-3">
       <h1 className="font-bubblegum font-black text-purple-200 text-5xl mb-5">Loveworthy Live EP Preview</h1>
@@ -11,8 +13,13 @@ function LoveworthyPreview() {
       >
         <a href="https://music.shwarma.band/album/loveworthy-live-ep">Loveworthy Live EP by shwarma</a>
       </iframe>
+      <Link href="/">
+        <a className="font-bubblegum text-2xl btn mx-auto inline">
+          Back to the shwarmth
+        </a>
+      </Link>
     </div>
   );
 }
 
-export default LoveworthyPreview;
+export default LoveworthyLiveEP;
