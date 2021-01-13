@@ -19,7 +19,7 @@ function HomeNav() {
               className={`nav-link ${link.label}`}
             >
               <Link href={link.route}>
-                <a className="hover:text-pink-300">
+                <a className="hover:text-yellow-300">
                   {link.label}
                 </a>
               </Link>

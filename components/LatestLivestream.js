@@ -20,9 +20,9 @@ function LatestLivestream() {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
           title="Latest Livestream"
-          className="w-full md:w-1/2 h-52 md:h-96 mb-5 md:mb-0 bg-purple-900 bg-opacity-20"
+          className="w-full md:w-1/2 h-52 md:h-96 mb-5 md:mb-0 bg-yellow-900 bg-opacity-20"
         />
-        <div className="md:w-1/2 md:pl-10 text-xl text-fuchsia-100">
+        <div className="md:w-1/2 md:pl-10 text-xl text-yellow-50">
           <p className="mb-3">
             The album release livestream for shwarma&apos;s second album,
             {' '}

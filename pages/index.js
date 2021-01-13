@@ -49,10 +49,10 @@ export default function Home({ bandMembers, headingFirst, headingSecond }) {
         <MusicReleases />
         <LatestLivestream />
         <GalleryPhotos />
-        <footer className="flex flex-col items-center text-fuchsia-100 pb-5">
+        <footer className="flex flex-col items-center text-yellow-100 pb-5">
           <a
             href="mailto:shwarmaband@gmail.com"
-            className="mx-auto mb-6 border border-pink-200 pink-hover hover:bg-pink-200 hover:bg-opacity-10 p-2 rounded-lg"
+            className="mx-auto mb-6 border border-yellow-200 yellow-hover hover:bg-yellow-200 hover:bg-opacity-10 p-2 rounded-lg"
           >
             Contact
           </a>

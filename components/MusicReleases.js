@@ -115,13 +115,13 @@ function MusicReleases() {
             </div>
 
             <div className="flex items-center">
-              <p className="text-pink-200 mr-2 font-light uppercase">Listen on:</p>
+              <p className="text-yellow-200 mr-2 font-light uppercase">Listen on:</p>
               <ul className="flex items-center">
                 {release.links.map((link) => (
                   <li key={link.url}>
                     <a
                       href={link.url}
-                      className="inline-block px-2 pink-hover"
+                      className="inline-block px-2 yellow-hover"
                       title={link.name}
                       target="_blank"
                       rel="noreferrer"

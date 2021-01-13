@@ -46,14 +46,14 @@ export default function GenrePicker() {
       </h1>
       {currentSong !== null
         && (
-        <h2 className="text-fuchsia-200 text-3xl font-black text-center py-10">
+        <h2 className="text-yellow-200 text-3xl font-black text-center py-10">
           {genreSongs[currentSong].genre}
           ?
         </h2>
         )}
       {currentSong !== null
         && (
-        <h2 className="text-fuchsia-100 text-2xl font-light text-center py-10">
+        <h2 className="text-yellow-100 text-2xl font-light text-center py-10">
           Try
           {' '}
           <span className="font-bold">{genreSongs[currentSong].title}</span>
@@ -73,7 +73,7 @@ export default function GenrePicker() {
       <div className="mt-auto w-full">
         <div className="grid grid-cols-2 gap-2 w-full md:p-7">
           <button
-            className="p-3 border-1 bg-purple-600 rounded-lg uppercase text-lg font-bold"
+            className="p-3 border-1 bg-yellow-600 rounded-lg uppercase text-lg font-bold"
             onClick={() => selectLastSong()}
             disabled={currentSong === lastSong}
             type="button"
@@ -81,7 +81,7 @@ export default function GenrePicker() {
             Last Song
           </button>
           <button
-            className="p-3 border-1 bg-purple-600 rounded-lg uppercase text-lg font-bold"
+            className="p-3 border-1 bg-yellow-600 rounded-lg uppercase text-lg font-bold"
             onClick={() => selectRandomSong()}
             type="button"
           >

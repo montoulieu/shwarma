@@ -9,7 +9,7 @@ function PhotoBio({ headingFirst, headingSecond, bandMembers }) {
           height="512px"
           width="512px"
           alt="shwarma playing live at toads tavern"
-          className="rounded-3xl shadow-md mx-auto"
+          className="main-photo rounded-3xl shadow-md mx-auto"
         />
       </div>
       <div className="md:w-1/2 xl:w-1/3 text-white flex justify-center flex-col md:pl-4 lg:pl-12 py-4 md:py-0 ">

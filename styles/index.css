@@ -8,7 +8,7 @@
 
 html,
 body {
-  @apply bg-gradient-to-br from-purple-900 to-fuchsia-500;
+  @apply bg-gradient-to-br from-red-900 to-red-600;
 }
 
 .font-bubblegum {
@@ -38,17 +38,21 @@ body {
   }
 }
 
+.main-photo {
+  filter: hue-rotate(60deg);
+}
+
 .heading {
   text-shadow: 0px 0px 5px rgba(0,0,0,0.35);
-  @apply text-4xl lg:text-5xl font-bold text-fuchsia-400;
+  @apply text-4xl lg:text-5xl font-bold text-yellow-400;
 }
 
 .subheading {
-  @apply text-xl lg:text-2xl font-extrabold text-purple-100 tracking-wider;
+  @apply text-xl lg:text-2xl font-extrabold text-yellow-50 tracking-wider;
 }
 
-.pink-hover {
-  @apply text-fuchsia-300 hover:text-fuchsia-400 transition-colors duration-200;
+.yellow-hover {
+  @apply text-yellow-400 hover:text-yellow-500 transition-colors duration-200;
 }
 
 .genre-picker {
@@ -56,7 +60,7 @@ body {
 }
 
 .btn {
-  @apply border border-fuchsia-300 text-fuchsia-200 p-3 rounded-lg;
-  @apply hover:bg-fuchsia-300 hover:text-fuchsia-500;
+  @apply border border-yellow-300 text-yellow-200 p-3 rounded-lg;
+  @apply hover:bg-yellow-300 hover:text-yellow-500;
   @apply transition-colors duration-300;
 }
