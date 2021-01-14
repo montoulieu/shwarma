@@ -3,7 +3,7 @@ import Link from 'next/link';
 function LoveworthyLiveEP() {
   return (
     <div className="min-h-screen flex flex-col content-center justify-center text-center text-white p-3">
-      <h1 className="font-bubblegum font-black text-yellow-200 text-5xl">Loveworthy Live EP Preview</h1>
+      <h1 className="font-bubblegum font-black text-yellow-400 text-5xl">Loveworthy Live EP Preview</h1>
       <iframe
         style={{ border: 0, width: 400, height: 671 }}
         title="loveworthy-live-ep-bandcamp-preview"
