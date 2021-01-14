@@ -5,6 +5,19 @@ import Image from 'next/image';
 function MusicReleases() {
   const releases = [
     {
+      name: 'Loveworthy Live EP',
+      year: 2021,
+      image: 'https://f4.bcbits.com/img/a1088914233_10.jpg',
+      // embedID: 1195944678,
+      links: [
+        {
+          icon: faBandcamp,
+          name: 'Bandcamp',
+          url: 'https://shwarma.bandcamp.com/album/loveworthy-live-ep',
+        },
+      ],
+    },
+    {
       name: 'Emily\'s Aparments',
       year: 2020,
       image: 'https://f4.bcbits.com/img/a0616848912_16.jpg',
@@ -83,7 +96,7 @@ function MusicReleases() {
   return (
     <div className="px-3 md:px-0 pb-10">
       <h2 className="heading font-bubblegum mb-5">Music Releases</h2>
-      <ul className="grid md:grid-cols-3 gap-6 ">
+      <ul className="grid md:grid-cols-2 xl:grid-cols-4 gap-6 ">
         {releases.map((release) => (
           <li
             className="pb-5"
@@ -93,6 +106,7 @@ function MusicReleases() {
               <button
                 onClick={() => openBandcampEmbedWindow(release.embedID)}
                 type="button"
+                className="rounded-3xl"
               >
                 <Image
                   src={release.image}
@@ -121,7 +135,7 @@ function MusicReleases() {
                   <li key={link.url}>
                     <a
                       href={link.url}
-                      className="inline-block px-2 yellow-hover"
+                      className="inline-block px-2 yellow-hover text-xl"
                       title={link.name}
                       target="_blank"
                       rel="noreferrer"
