@@ -8,7 +8,11 @@
     <changefreq>hourly</changefreq>
   </url>
   <url>
-    <loc>http://localhost:3000/loveworthy-preview</loc>
+    <loc>http://localhost:3000/stream</loc>
+    <changefreq>hourly</changefreq>
+  </url>
+  <url>
+    <loc>http://localhost:3000/preview/loveworthy-live-ep</loc>
     <changefreq>hourly</changefreq>
   </url>
 </urlset>

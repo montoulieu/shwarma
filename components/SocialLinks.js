@@ -59,6 +59,7 @@ function SocialLinks() {
       link: 'https://twitter.com/shwarmadelica',
     },
   ];
+
   return (
     <div className="py-10 md:pb-5">
       <div className="music-links mb-6">
@@ -84,6 +85,7 @@ function SocialLinks() {
           ))}
         </ul>
       </div>
+
       <div className="social-links">
         <ul className="flex flex-wrap justify-center">
           {socialPlatforms.map((platform) => (
