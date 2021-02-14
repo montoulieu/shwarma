@@ -17,7 +17,7 @@ function Stream() {
       </div>
       <div className="flex flex-col md:flex-row font-bold md:mx-auto ">
         <a
-          href=""
+          href="https://www.youtube.com/watch?v=qxzOTcbdgy8"
           className="border-2 border-yellow-400 text-lg rounded-lg p-5 mb-3 md:mb-0 w-full md:w-64 md:mr-3"
           target="_blank"
           rel="noreferrer"
@@ -30,7 +30,7 @@ function Stream() {
           Watch on Youtube
         </a>
         <a
-          href="https://www.facebook.com/shwarmaband/posts/2952664751689513"
+          href="https://www.facebook.com/shwarmaband/posts/2956500767972578"
           className="border-2 border-yellow-400 text-lg rounded-lg p-5 w-full md:w-64"
           target="_blank"
           rel="noreferrer"
