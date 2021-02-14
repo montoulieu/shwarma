@@ -14,7 +14,7 @@ function Stream() {
         openGraph={{
           url: 'https://www.shwarma.band/stream',
           title: 'shwarma - Loveworthy Live EP Premiere',
-          description: 'Loveworthy Live EP stream links',
+          description: 'Loveworthy Live EP premiering Valentines Day at 1PM MST',
           images: [
             {
               url: '/images/loveworthy-live-premiere-small.jpg',
