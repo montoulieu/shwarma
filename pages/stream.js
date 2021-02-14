@@ -3,10 +3,31 @@ import {
   faYoutube, faFacebook,
 } from '@fortawesome/free-brands-svg-icons';
 import Image from 'next/image';
+import { NextSeo } from 'next-seo';
 
 function Stream() {
   return (
     <div className="min-h-screen flex flex-col content-center justify-center text-center text-yellow-400 text-lg p-3">
+      <NextSeo
+        title="shwarma - Loveworthy Live EP Premiere"
+        description="shwarma is an experimental psychedelic and progressive rock band hailing from Denver, Colorado."
+        openGraph={{
+          url: 'https://www.shwarma.band/stream',
+          title: 'shwarma - Loveworthy Live EP Premiere',
+          description: 'Loveworthy Live EP stream links',
+          images: [
+            {
+              url: '/images/loveworthy-live-premiere-small.jpg',
+              alt: 'shwarma live',
+            },
+          ],
+        }}
+        twitter={{
+          handle: '@shwarmadelica',
+          site: '@shwarmadelica',
+          cardType: 'summary_large_image',
+        }}
+      />
       <div className="md:w-1/2 mx-auto mb-10">
         <Image
           src="/images/loveworthy-live-premiere-small.jpg"
