@@ -15,7 +15,7 @@ function LatestLivestream() {
           width="560"
           height="315"
           loading="lazy"
-          data-src="https://www.youtube.com/embed/Ajtn2VI3Fug"
+          data-src="https://youtu.be/qxzOTcbdgy8?t=718"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
@@ -24,19 +24,18 @@ function LatestLivestream() {
         />
         <div className="md:w-1/2 md:pl-10 text-xl text-yellow-50">
           <p className="mb-3">
-            The album release livestream for shwarma&apos;s second album,
+            The album release livestream for shwarma&apos;s second EP,
             {' '}
             <a
-              href="https://shwarma.bandcamp.com/album/emilys-aparments"
+              href="https://shwarma.bandcamp.com/album/loveworthy-live-ep"
               target="_blank"
               rel="noreferrer"
             >
-              Emily&apos;s Aparments
+              Loveworthy Live EP
             </a>
             .
           </p>
-          <p className="mb-3">Filled with choice cuts from the album as well as many mysterious happenings like Jackson finding out he has a son, bassmaster Kevin getting abducted by aliens while taking a piss, and Steve&apos;s ticking time bomb drumset thats set to blow when the beat stops.</p>
-          <p>Filmed live at Turbo Snail during the summer of 2020</p>
+          <p className="mb-3">The original live recorded performance for Loveworthy Live EP filmed at the soundstages of LSI Lighting Services in Denver, CO.</p>
         </div>
       </div>
     </div>
