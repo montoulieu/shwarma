@@ -9,7 +9,7 @@
         "hooks/*"
       ],
       "@utils/*": [
-        "utils/*"
+        "lib/*"
       ],
       "@slider/*": [
         "public/slider/"
