@@ -15,7 +15,7 @@ function LatestLivestream() {
           width="560"
           height="315"
           loading="lazy"
-          data-src="https://youtu.be/qxzOTcbdgy8?t=718"
+          data-src="https://www.youtube.com/embed/qxzOTcbdgy8?t=722"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
