@@ -12,11 +12,11 @@ export default function Home({ bandMembers, headingFirst, headingSecond }) {
   return (
     <div className="h-full">
       <NextSeo
-        title="shwarma - denver psych rock"
+        title="shwarma - Denver Psych Rock Band"
         description="shwarma is an experimental psychedelic and progressive rock band hailing from Denver, Colorado."
         openGraph={{
           url: 'https://www.shwarma.band',
-          title: 'shwarma - denver psych rock',
+          title: 'shwarma - Denver Psych Rock Band',
           description: 'shwarma is an experimental psychedelic and progressive rock band hailing from Denver, Colorado.',
           images: [
             {
@@ -26,18 +26,20 @@ export default function Home({ bandMembers, headingFirst, headingSecond }) {
           ],
         }}
         twitter={{
-          handle: '@shwarmadelica',
-          site: '@shwarmadelica',
+          handle: '@shwarmaband',
+          site: '@shwarmaband',
           cardType: 'summary_large_image',
         }}
       />
+
       <Head>
-        <title>shwarma - denver psych rock</title>
+        <title>shwarma - denver psych rock band</title>
         <link
           rel="icon"
           href="/favicon.png"
         />
       </Head>
+
       <main className="container mx-auto">
         <MainHeader />
         <PhotoBio
