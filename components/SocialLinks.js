@@ -56,7 +56,7 @@ function SocialLinks() {
     {
       icon: faTwitter,
       label: 'Twitter',
-      link: 'https://twitter.com/shwarmadelica',
+      link: 'https://twitter.com/shwarmaband',
     },
   ];
 
