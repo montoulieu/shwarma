@@ -6,7 +6,7 @@ function LoveworthyLiveEP() {
       <h1 className="font-bubblegum font-black text-yellow-400 text-5xl">
         Kebab
       </h1>
-      <iframe
+      {/* <iframe
         style={{ border: 0, width: 400, height: 671 }}
         title="kebab-bandcamp-preview"
         src="https://bandcamp.com/EmbeddedPlayer/album=1218904325/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/tracklist=true/tracks=1427899762,3471284504,3521488986,2069037788,4158792750/esig=1f6a9b614a2f69c12676028e3de50cea/"
@@ -14,7 +14,8 @@ function LoveworthyLiveEP() {
         seamless
       >
         <a href="https://music.shwarma.band/album/kebab">Kebab by shwarma</a>
-      </iframe>
+      </iframe> */}
+      <iframe className="mx-auto my-5" style={{ border: 0, width: 400, height: 671 }} src="https://bandcamp.com/EmbeddedPlayer/album=3667111821/size=large/bgcol=181a1b/linkcol=056cc4/tracklist=false/transparent=true/" seamless><a href="https://music.shwarma.band/album/kebab">Kebab by shwarma</a></iframe>
       <Link href="/">
         <a className="font-bubblegum text-2xl btn mx-auto inline">
           Back to the shwarmth
