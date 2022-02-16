@@ -9,7 +9,7 @@ function LoveworthyLiveEP() {
       <iframe
         style={{ border: 0, width: 400, height: 671 }}
         title="kebab-bandcamp-preview"
-        src="https://bandcamp.com/EmbeddedPlayer/album=1218904325/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/tracklist=true/tracks=1427899762,3471284504,3521488986,2069037788,4158792750/esig=1f6a9b614a2f69c12676028e3de50cea/"
+        src="https://bandcamp.com/EmbeddedPlayer/album=3667111821/size=large/bgcol=181a1b/linkcol=056cc4/transparent=true/tracklist=true/tracks=3761387873,1233339987,2005690326,2039400135,3444074936,3555189002,3320950993,2839155940,3585083184,1227262305/esig=f141222ffef72830b9116a13ffb95173/"
         className="mx-auto my-5"
         seamless
       >
