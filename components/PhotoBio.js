@@ -1,41 +1,32 @@
 import Image from 'next/image';
+import LogoShwarma from './SVG/LogoShwarma';
+import SocialLinks from "@components/SocialLinks";
+import BandMembersList from './BandMembersList';
 
 function PhotoBio({ headingFirst, headingSecond, bandMembers }) {
   return (
-    <div className="md:flex px-3 md:px-0">
-      <div className="md:w-1/2 text-center mb-5 md:mb-0 ">
-        <Image
-          src="/images/shred-shwarma-sm.jpg"
-          height="512px"
-          width="512px"
-          alt="shwarma playing live at toads tavern"
-          className="main-photo rounded-3xl shadow-md mx-auto"
-        />
-      </div>
-      <div className="md:w-1/2 xl:w-1/3 text-white flex justify-center flex-col md:pl-4 lg:pl-12 py-4 md:py-0 ">
-        <h2 className="heading font-bubblegum">About</h2>
-        <div className="mb-10 font-light text-white text-xl">
-          <p className="mb-2">{headingFirst}</p>
-          <p>{headingSecond}</p>
+    <div className="md:flex mb-10">
+      <div className="grid lg:grid-cols-2 gap-6 justify">
+        <LogoShwarma className="h-32 w-auto mx-auto"/>
+        <SocialLinks />
+
+        <div>
+          <Image
+            src="/images/shwarma-band-collage.jpg"
+            width="954"
+            height="620"
+            alt="shwarma playing live at toads tavern"
+            className="main-photo rounded-3xl shadow-md mx-auto"
+          />
+          <BandMembersList />
         </div>
-        <h2 className="heading font-bubblegum">Members</h2>
-        {bandMembers
-        && (
-        <ul className="text-white">
-          {bandMembers.map((member) => (
-            <li key={member.name}>
-              <strong>{member.name}</strong>
-              {' '}
-              <small>
-                {' '}
-                –
-                {' '}
-                {member.role}
-              </small>
-            </li>
-          ))}
-        </ul>
-        )}
+
+
+        <div className="font-light text-white text-xl max-w-lg mx-auto flex flex-col justify-center">
+          <p>Out from the depths of Denver’s music scene comes the 5-piece kebab-rock monstrosity that is <span className="font-bold text-brand">shwarma</span>.</p><p>Creating music since 2017, they have released 3 albums and 2 EPs, with a third currently in production.</p>
+          <p>The shwarmth brings many styles of music to the table and is known for switching genres and time signatures on the fly. They’ve been playing the Denver metro area for years and are planning a tour for early 2023.</p>
+        </div>
+
       </div>
     </div>
   );

@@ -5,7 +5,7 @@ import { NextSeo } from "next-seo";
 
 function Stream() {
   return (
-    <div className="min-h-screen flex flex-col content-center justify-center text-center text-blue-400 text-lg p-3">
+    <div className="min-h-screen flex flex-col content-center justify-center text-center text-brand text-lg p-3">
       <NextSeo
         title="shwarma - Loveworthy Live EP Premiere"
         description="shwarma is an experimental psychedelic and progressive rock band hailing from Denver, Colorado."
