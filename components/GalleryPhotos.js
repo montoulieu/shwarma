@@ -44,18 +44,18 @@ function PhotoSlider() {
   };
 
   return (
-    <div className="photo-gallery py-5 px-3 md:px-0">
-      <h2 className="heading font-heading mb-3">Photo Gallery</h2>
+    <div className="mb-10 -mx-3">
+      <h2 className="heading font-heading px-3">Photo Gallery</h2>
       <div className="slider">
         <Slider {...settings}>
           {photos.map((photo) => (
             <div
-              className="slide p-3"
+              className="slide px-3 focus-visible:outline-none"
               key={photo.label}
             >
               <Image
                 src={photo.path}
-                className="rounded-xl w-full"
+                className="rounded-lg w-full"
                 alt={photo.label}
                 loading="lazy"
                 width="512"

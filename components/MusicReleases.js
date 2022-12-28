@@ -15,22 +15,22 @@ function MusicReleases() {
   }
 
   return (
-    <div className="px-3 md:px-0 pb-10">
+    <div>
       <h2 className="heading font-heading">Music Releases</h2>
       <ul className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
         {releases.map((release) => (
-          <li className="pb-5" key={release.name}>
+          <li className="" key={release.name}>
             <div className="text-center mb-4">
               <button
                 onClick={() => openBandcampEmbedWindow(release.embedID)}
                 type="button"
-                className="rounded-xl"
+                className="rounded-lg"
               >
                 <Image
                   src={release.image}
                   height="512"
                   width="512"
-                  className="rounded-xl shadow-lg cursor-pointer"
+                  className="rounded-lg shadow-lg cursor-pointer"
                   alt={`${release.name} album cover`}
                   loading="lazy"
                 />

@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import LogoShwarma from './SVG/LogoShwarma';
 import SocialLinks from "@components/SocialLinks";
+import BandMembersList from './BandMembersList';
 
 function PhotoBio({ headingFirst, headingSecond, bandMembers }) {
   return (
@@ -9,13 +10,16 @@ function PhotoBio({ headingFirst, headingSecond, bandMembers }) {
         <LogoShwarma className="h-32 w-auto mx-auto"/>
         <SocialLinks />
 
-        <Image
-          src="/images/shwarma-band-collage.jpg"
-          width="954"
-          height="620"
-          alt="shwarma playing live at toads tavern"
-          className="main-photo rounded-3xl shadow-md mx-auto"
-        />
+        <div>
+          <Image
+            src="/images/shwarma-band-collage.jpg"
+            width="954"
+            height="620"
+            alt="shwarma playing live at toads tavern"
+            className="main-photo rounded-3xl shadow-md mx-auto"
+          />
+          <BandMembersList />
+        </div>
 
 
         <div className="font-light text-white text-xl max-w-lg mx-auto flex flex-col justify-center">

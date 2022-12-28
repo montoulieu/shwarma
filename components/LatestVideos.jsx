@@ -9,9 +9,9 @@ const LatestVideos = () => {
   // }, []);
 
   return (
-    <div className="py-10 px-3 md:px-0">
+    <div className="py-10">
       <h2 className="heading font-heading mb-5">Latest Videos</h2>
-      <div className="w-full grid grid-cols-2 gap-6">
+      <div className="w-full grid sm:grid-cols-2 gap-6">
         <div>
         <iframe
           width="100%"

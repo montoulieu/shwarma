@@ -34,7 +34,7 @@ p {
   }
 
   .video-16-9 {
-    @apply h-[320px] lg:h-[280px] xl:h-[430px];
+    @apply h-[220px] lg:h-[320px] xl:h-[430px];
   }
 }
 
