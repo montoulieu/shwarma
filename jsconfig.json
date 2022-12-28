@@ -13,6 +13,9 @@
       ],
       "@slider/*": [
         "public/slider/"
+      ],
+      "@data/*": [
+        "data/*"
       ]
     },
   },

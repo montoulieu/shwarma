@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import genreSongs from "../json/genreSongs";
+import genreSongs from "../data/genreSongs";
 
 export default function GenrePicker() {
   const [currentSong, setCurrentSong] = useState(null);
@@ -38,7 +38,7 @@ export default function GenrePicker() {
 
   return (
     <div className="h-screen flex flex-col text-white p-3">
-      <h1 className="heading font-bubblegum text-center py-3">
+      <h1 className="heading font-heading text-center py-3">
         shwarma <br />
         Pick a Genre
       </h1>
@@ -59,7 +59,7 @@ export default function GenrePicker() {
           seamless
           title="bandcamp player"
           loading="lazy"
-          height="42px"
+          height="42"
         />
       )}
       <div className="mt-auto w-full">

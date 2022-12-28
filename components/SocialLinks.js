@@ -43,11 +43,11 @@ function SocialLinks() {
     //   label: 'Tidal',
     //   link: 'https://tidal.com/browse/artist/9889666',
     // },
-    {
-      icon: faDeezer,
-      label: "Deezer",
-      link: "https://www.deezer.com/en/artist/14902845",
-    },
+    // {
+    //   icon: faDeezer,
+    //   label: "Deezer",
+    //   link: "https://www.deezer.com/en/artist/14902845",
+    // },
   ];
 
   const socialPlatforms = [
@@ -69,8 +69,8 @@ function SocialLinks() {
   ];
 
   return (
-    <div className="py-10 md:pb-5">
-      <div className="music-links mb-6">
+    <div className="py-6">
+      <div className="music-links mb-3">
         <ul className="flex flex-wrap justify-center">
           {musicPlatforms.map((platform) => (
             <li key={platform.label} className="px-2 md:px-4">
@@ -78,10 +78,10 @@ function SocialLinks() {
                 href={platform.link}
                 target="_blank"
                 rel="noreferrer"
-                className="blue-hover text-4xl"
+                className="text-brand text-3xl"
                 title={platform.label}
               >
-                <FontAwesomeIcon icon={platform.icon} height="3rem" />
+                <FontAwesomeIcon icon={platform.icon} height="2rem" />
               </a>
             </li>
           ))}
@@ -96,10 +96,10 @@ function SocialLinks() {
                 href={platform.link}
                 target="_blank"
                 rel="noreferrer"
-                className="blue-hover text-4xl"
+                className="text-brand text-3xl"
                 title={platform.label}
               >
-                <FontAwesomeIcon icon={platform.icon} height="3rem" />
+                <FontAwesomeIcon icon={platform.icon} height="2rem" />
               </a>
             </li>
           ))}

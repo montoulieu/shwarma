@@ -3,9 +3,7 @@ import Link from "next/link";
 function LoveworthyLiveEP() {
   return (
     <div className="min-h-screen flex flex-col content-center justify-center text-center text-white p-3">
-      <h1 className="font-bubblegum font-black text-teal-300 text-5xl">
-        Kebab
-      </h1>
+      <h1 className="font-heading font-black heading text-5xl">Kebab</h1>
       <iframe
         style={{ border: 0, width: 400, height: 671 }}
         title="kebab-bandcamp-preview"
@@ -16,7 +14,7 @@ function LoveworthyLiveEP() {
         <a href="https://music.shwarma.band/album/kebab">Kebab by shwarma</a>
       </iframe>
       <Link href="/">
-        <a className="font-bubblegum text-2xl btn mx-auto inline">
+        <a className="font-heading text-2xl btn mx-auto inline">
           Back to the shwarmth
         </a>
       </Link>

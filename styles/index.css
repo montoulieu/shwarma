@@ -1,5 +1,4 @@
-@import url("https://use.typekit.net/cgj7ajr.css");
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 @tailwind base;
 
 @tailwind components;
@@ -8,24 +7,35 @@
 
 html,
 body {
-  @apply bg-gradient-to-br from-blue-500 to-teal-600;
+  @apply bg-neutral-900 text-neutral-100;
+  font-family: "Poppins", serif;
 }
 
-.font-bubblegum {
-  font-family: bubblegum-pop-vanilla, sans-serif;
+p {
+  @apply mb-3
+}
+
+.font-heading {
+  @apply font-black text-brand mb-5
 }
 
 .main-photo {
   filter: hue-rotate(-120deg);
 }
 
-.heading {
-  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.35);
-  @apply text-4xl lg:text-5xl font-bold text-teal-300;
-}
+@layer components {
+  .heading {
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.35);
+    @apply text-3xl lg:text-4xl font-bold;
+  }
 
-.subheading {
-  @apply text-xl lg:text-2xl font-extrabold text-teal-100 tracking-wider;
+  .subheading {
+    @apply text-xl font-extrabold tracking-wider;
+  }
+
+  .video-16-9 {
+    @apply h-[320px] lg:h-[280px] xl:h-[430px];
+  }
 }
 
 .blue-hover {
@@ -37,7 +47,7 @@ body {
 }
 
 .btn {
-  @apply border-2 border-teal-400 text-teal-400 py-2 px-3 rounded-xl;
-  @apply hover:bg-teal-400 hover:text-teal-600;
+  @apply border-2 border-brand text-brand py-2 px-3 rounded-xl;
+  /* @apply hover:bg-teal-400 hover:text-teal-600; */
   @apply transition-colors duration-300;
 }
