@@ -6,7 +6,7 @@ const GoldenShwarmasanV1 = () => {
       <div className="text-center text-yellow-300 max-w-sm">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/images/logo - gold.png"
+          src="/images/logo-gold.png"
           alt="shwarma logo"
           className="mb-4 w-72 mx-auto"
         />
