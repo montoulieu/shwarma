@@ -13,23 +13,23 @@ const LatestVideos = () => {
       <h2 className="heading font-heading mb-5">Latest Videos</h2>
       <div className="w-full grid sm:grid-cols-2 gap-6">
         <div>
-        <iframe
-          width="100%"
-          height="100%"
-          loading="lazy"
-          src="https://www.youtube.com/embed/KEzPwDNWh7s"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-          title="Latest Livestream"
-          className="w-full video-16-9"
-        />
+          <iframe
+            width="100%"
+            height="100%"
+            loading="lazy"
+            src="https://www.youtube.com/embed/Pp3chsjZXzI"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            title="Latest Livestream"
+            className="w-full video-16-9"
+          />
         </div>
         <div>
           <iframe
             width="100%"
             height="100%"
             loading="lazy"
-            src="https://www.youtube.com/embed/ghu2yj4-7I4"
+            src="https://www.youtube.com/embed/KEzPwDNWh7s"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
             title="Latest Livestream"
@@ -39,6 +39,6 @@ const LatestVideos = () => {
       </div>
     </div>
   );
-}
+};
 
 export default LatestVideos;
