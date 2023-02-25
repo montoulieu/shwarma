@@ -1,19 +1,20 @@
-import React from 'react';
-import Slider from 'react-slick';
-import Image from 'next/image';
-import photos from '@data/photos';
+import React from "react";
+import Slider from "react-slick";
+import Image from "next/image";
+import photos from "@data/photos";
 
 function PhotoSlider() {
-
   const settings = {
     dots: false,
     speed: 1000,
     arrows: false,
     autoplay: true,
+    autoplaySpeed: 5000,
     slidesToShow: 3,
     slidesToScroll: 3,
     pauseOnHover: true,
     lazyLoad: true,
+
     responsive: [
       {
         breakpoint: 1023,
@@ -40,7 +41,7 @@ function PhotoSlider() {
   };
 
   const divStyle = {
-    minHeight: '460px',
+    minHeight: "460px",
   };
 
   return (
