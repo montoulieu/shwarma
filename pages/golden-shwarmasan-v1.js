@@ -31,13 +31,7 @@ const GoldenShwarmasanV1 = () => {
           is like the bubbles themselves: fleeting and ephemeral, here one
           moment and gone the next. Maybe the past and future are just as
           elusive as the bubbles that disappear as soon as they form, leaving
-          only a faint memory of their existence. As I ponder these strange and
-          psychedelic thoughts, I take another sip of my soda and feel the
-          bubbles tickle my tongue. And in that moment, I realize that time is
-          just like the bubbles: it may be fleeting and elusive, but it&apos;s
-          also beautiful and full of wonder. And just like the bubbles, we
-          should savor every moment while we can, before it disappears into the
-          great unknown.
+          only a faint memory of their existence.
         </h2>
         <h3 className="mb-10">Find out more April 1st </h3>
         {/* eslint-disable-next-line @next/next/no-img-element */}
