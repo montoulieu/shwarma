@@ -20,7 +20,7 @@ const LatestVideos = () => {
             src="https://www.youtube.com/embed/Pp3chsjZXzI"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
-            title="Latest Livestream"
+            title="Lesdoit (Live)"
             className="w-full video-16-9"
           />
         </div>
@@ -29,10 +29,34 @@ const LatestVideos = () => {
             width="100%"
             height="100%"
             loading="lazy"
-            src="https://www.youtube.com/embed/KEzPwDNWh7s"
+            src="https://www.youtube.com/embed/DruNTsjxrtI"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
-            title="Latest Livestream"
+            title="Space Harpies (Live)"
+            className="w-full video-16-9"
+          />
+        </div>
+        <div>
+          <iframe
+            width="100%"
+            height="100%"
+            loading="lazy"
+            src="https://www.youtube.com/embed/F3d6sgUmTlg"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            title="Save Me From Safety (Live)"
+            className="w-full video-16-9"
+          />
+        </div>
+        <div>
+          <iframe
+            width="100%"
+            height="100%"
+            loading="lazy"
+            src="https://www.youtube.com/embed/ghu2yj4-7I4"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            title="Jingle of a Dog's Collar (Live)"
             className="w-full video-16-9"
           />
         </div>
