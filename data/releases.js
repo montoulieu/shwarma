@@ -6,6 +6,19 @@ import {
 
 const releases = [
   {
+    name: "Cheeseborgle EP",
+    year: 2023,
+    image: "https://f4.bcbits.com/img/a2255511248_10.jpg",
+    embedID: null,
+    links: [
+      {
+        icon: faBandcamp,
+        name: "Bandcamp",
+        url: "https://shwarma.bandcamp.com/album/cheeseborgle-ep",
+      },
+    ],
+  },
+  {
     name: "Kebab",
     year: 2022,
     image: "https://f4.bcbits.com/img/a0240524462_10.jpg",
@@ -16,7 +29,7 @@ const releases = [
         name: "Bandcamp",
         url: "https://shwarma.bandcamp.com/album/kebab",
       },
-    ]
+    ],
   },
   {
     name: "Loveworthy Live EP",

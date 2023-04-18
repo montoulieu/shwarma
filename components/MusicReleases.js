@@ -3,8 +3,8 @@ import releases from "data/releases";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function MusicReleases() {
-  
   const openBandcampEmbedWindow = (id) => {
+    if (!id) return;
     const params =
       "scrollbars=no,resizable=no,status=no,location=no,toolbar=no,menubar=no, width=320,height=800,left=0,top=0";
     window.open(
@@ -12,12 +12,12 @@ function MusicReleases() {
       "test",
       params
     );
-  }
+  };
 
   return (
     <div>
       <h2 className="heading font-heading">Music Releases</h2>
-      <ul className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+      <ul className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {releases.map((release) => (
           <li className="" key={release.name}>
             <div className="text-center mb-4">
@@ -43,9 +43,7 @@ function MusicReleases() {
             </div>
 
             <div className="flex items-center">
-              <p className="text-brand mr-2 font-light uppercase">
-                Listen on:
-              </p>
+              <p className="text-brand mr-2 font-light uppercase">Listen on:</p>
 
               <ul className="flex items-center">
                 {release.links.map((link) => (
