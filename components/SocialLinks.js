@@ -26,7 +26,7 @@ function SocialLinks() {
     {
       icon: faYoutube,
       label: "Youtube Music",
-      link: "https://music.youtube.com/channel/UCHl6N7GvVTmwZZw2gOa3yEg",
+      link: "https://www.youtube.com/channel/UC69vsi_MuqB8VCka-wj8Mcg/",
     },
     {
       icon: faAmazon,
