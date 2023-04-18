@@ -12,7 +12,7 @@ function PhotoBio({ headingFirst, headingSecond, bandMembers }) {
 
         <div>
           <Image
-            src="/images/shwarma-live-crowd.jpg"
+            src="/images/shwarma-live-crowd-1.jpg"
             width="954"
             height="620"
             alt="shwarma playing live at cervantes"
@@ -25,17 +25,18 @@ function PhotoBio({ headingFirst, headingSecond, bandMembers }) {
           <p>
             Out from the depths of Denver’s music scene comes the 5-piece
             kebab-rock monstrosity that is{" "}
-            <span className="font-bold text-brand">shwarma</span>.
+            <span className="font-bold text-brand">shwarma</span>. Creating
+            music since 2017, they have released 3 albums and 2 EPs, with a
+            third currently set to release on 5/29.
           </p>
+          <p></p>
           <p>
-            Creating music since 2017, they have released 3 albums and 2 EPs,
-            with a third currently in production.
-          </p>
-          <p>
-            The shwarmth brings many styles of music to the table and is known
-            for switching genres and time signatures on the fly. They’ve been
-            playing the Denver metro area for years and are planning a tour for
-            early 2023.
+            shwarma is renowned for delivering an eclectic musical experience,
+            effortlessly transitioning between genres and changing time
+            signatures on the fly. Over the years, they&apos;ve dominated the
+            Denver music scene and are now branching out to new cities. Get
+            ready to{" "}
+            <span className="font-bold text-brand">feel the shwarmth!</span>
           </p>
         </div>
       </div>
