@@ -16,6 +16,16 @@ const releases = [
         name: "Bandcamp",
         url: "https://shwarma.bandcamp.com/album/cheeseborgle-ep",
       },
+      {
+        icon: faSpotify,
+        name: "Spotify",
+        url: "https://open.spotify.com/album/3eVqMLKmYmH3F3yLmed1rp",
+      },
+      {
+        icon: faApple,
+        name: "Apple Music",
+        url: "https://music.apple.com/us/album/cheeseborgle-ep/1689111408",
+      },
     ],
   },
   {
@@ -29,6 +39,16 @@ const releases = [
         name: "Bandcamp",
         url: "https://shwarma.bandcamp.com/album/kebab",
       },
+      {
+        icon: faSpotify,
+        name: "Spotify",
+        url: "https://open.spotify.com/album/5S4EOR2CGGFJwGDz14VrLU",
+      },
+      {
+        icon: faApple,
+        name: "Apple Music",
+        url: "https://music.apple.com/gb/album/kebab/1611730754",
+      },
     ],
   },
   {
@@ -41,6 +61,16 @@ const releases = [
         icon: faBandcamp,
         name: "Bandcamp",
         url: "https://shwarma.bandcamp.com/album/loveworthy-live-ep",
+      },
+      {
+        icon: faSpotify,
+        name: "Spotify",
+        url: "https://open.spotify.com/album/70R1TYEVkklmKpoOX1kB3H",
+      },
+      {
+        icon: faApple,
+        name: "Apple Music",
+        url: "https://music.apple.com/gb/album/loveworthy-live-ep/1553150758",
       },
     ],
   },
