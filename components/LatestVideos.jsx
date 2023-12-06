@@ -17,6 +17,18 @@ const LatestVideos = () => {
             width="100%"
             height="100%"
             loading="lazy"
+            src="https://www.youtube.com/embed/-7ey4fr07Hs"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            title="Live at Cervantes Otherside"
+            className="w-full video-16-9"
+          />
+        </div>
+        <div>
+          <iframe
+            width="100%"
+            height="100%"
+            loading="lazy"
             src="https://www.youtube.com/embed/Pp3chsjZXzI"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
@@ -45,18 +57,6 @@ const LatestVideos = () => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
             title="Save Me From Safety (Live)"
-            className="w-full video-16-9"
-          />
-        </div>
-        <div>
-          <iframe
-            width="100%"
-            height="100%"
-            loading="lazy"
-            src="https://www.youtube.com/embed/ghu2yj4-7I4"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            title="Jingle of a Dog's Collar (Live)"
             className="w-full video-16-9"
           />
         </div>
