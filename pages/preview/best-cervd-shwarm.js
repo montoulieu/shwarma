@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function BestCervdShwarm() {
   return (
-    <div className="flex flex-col content-center justify-center text-center text-white p-3">
+    <div className="max-w-md mx-auto flex flex-col content-center justify-center text-center p-3">
       <h1 className="font-heading font-black heading text-5xl">
         Best Cerv&#39;d Shwarm
       </h1>
@@ -13,8 +13,22 @@ function BestCervdShwarm() {
         height="400"
         className="mx-auto block mb-8"
       />
+      <div className="text-brand text-sm mb-6">
+        <p>
+          Best Cerv&#39;d Shwarm is a live album compilation drawing from 3
+          shows performed at Cervantes last year. The album features tracks from
+          their February 18th debut at a sold out Ballroom side supporting
+          Lespecial, as well as a headliner show at the Otherside, and a dual
+          venue show joining Tauk, Dopapod and Doom Flamingo.{" "}
+        </p>
+        <p>
+          shwarma is preparing to play their second headliner show at the
+          Otherside on Friday June 21st with support from their friends in Cloud
+          Catcher and Kaepora. It&#39;s gonna be kick-ass, so come on out!
+        </p>
+      </div>
       <iframe
-        className="max-w-md w-full mx-auto block mb-8"
+        className="w-full mx-auto block mb-8"
         width="100%"
         height="600"
         frameborder="no"
