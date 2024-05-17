@@ -4,7 +4,7 @@ function BestCervdShwarm() {
   return (
     <div className="min-h-screen flex flex-col content-center justify-center text-center text-white p-3">
       <h1 className="font-heading font-black heading text-5xl">
-        Best Cerv'd Shwarm
+        Best Cerv&#39;d Shwarm
       </h1>
       <iframe
         style={{ border: 0, width: 400, height: 671 }}
