@@ -52,7 +52,6 @@ function BestCervdShwarm() {
         className="w-full mx-auto block mb-8"
         width="100%"
         height="600"
-        frameborder="no"
         allow="autoplay"
         src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1825280661%3Fsecret_token%3Ds-mlL0xWQrrSg&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=true&visual=false&show_artwork=false"
       />
