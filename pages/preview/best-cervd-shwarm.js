@@ -54,7 +54,7 @@ function BestCervdShwarm() {
         height="600"
         frameborder="no"
         allow="autoplay"
-        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1824337704%3Fsecret_token%3Ds-smgPCnWsZdy&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=true&visual=false&show_artwork=false"
+        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1825280661%3Fsecret_token%3Ds-mlL0xWQrrSg&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=true&visual=false&show_artwork=false"
       />
 
       <Link href="/" className="font-heading text-2xl btn mx-auto inline">
