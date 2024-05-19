@@ -9,6 +9,7 @@ function BestCervdShwarm() {
         title="Best Cerv'd Shwarm - Album Preview"
         description="Best Cerv'd Shwarm is a live album compilation drawing from 3 shows performed at Cervantes last year."
         openGraph={{
+          type: "music.album",
           images: [
             {
               url: "/images/album/best-cervd-shwarm-md-compress.jpg",
