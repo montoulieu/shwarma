@@ -12,7 +12,7 @@ function BestCervdShwarm() {
           type: "music.album",
           images: [
             {
-              url: "/images/album/best-cervd-shwarm-md-compress.jpg",
+              url: "https://www.shwarma.band/images/album/best-cervd-shwarm-md-compress.jpg",
             },
           ],
         }}
