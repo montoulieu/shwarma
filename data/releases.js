@@ -6,10 +6,33 @@ import {
 
 const releases = [
   {
+    name: "Best Cerv'd Shwarm (Live)",
+    year: 2024,
+    image: "https://f4.bcbits.com/img/a2936200661_10.jpg",
+    embedID: 255999805,
+    links: [
+      {
+        icon: faBandcamp,
+        name: "Bandcamp",
+        url: "https://shwarma.bandcamp.com/album/best-cervd-shwarm-live",
+      },
+      {
+        icon: faSpotify,
+        name: "Spotify",
+        url: "https://open.spotify.com/album/3350g8wQcyyYjubsUmFbxJ",
+      },
+      {
+        icon: faApple,
+        name: "Apple Music",
+        url: "https://music.apple.com/us/album/best-cervd-shwarm-live/1748798436",
+      },
+    ],
+  },
+  {
     name: "Cheeseborgle EP",
     year: 2023,
     image: "https://f4.bcbits.com/img/a2255511248_10.jpg",
-    embedID: null,
+    embedID: 703452784,
     links: [
       {
         icon: faBandcamp,
