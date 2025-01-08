@@ -61,11 +61,11 @@ function SocialLinks() {
       label: "Instagram",
       link: "https://www.instagram.com/shwarmaband/",
     },
-    {
-      icon: faTwitter,
-      label: "Twitter",
-      link: "https://twitter.com/shwarmaband",
-    },
+    // {
+    //   icon: faTwitter,
+    //   label: "Twitter",
+    //   link: "https://twitter.com/shwarmaband",
+    // },
   ];
 
   return (

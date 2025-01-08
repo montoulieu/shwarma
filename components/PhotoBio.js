@@ -23,7 +23,7 @@ function PhotoBio({ headingFirst, headingSecond, bandMembers }) {
 
         <div className="font-light text-white text-xl max-w-lg mx-auto flex flex-col justify-center">
           <p>
-            Out from the depths of Denver’s music scene comes the 5-piece
+            Out from the depths of Denver’s music scene comes the 6-piece
             kebab-rock monstrosity that is{" "}
             <span className="font-bold text-brand">shwarma</span>. Creating
             music since 2017, they have released 3 albums and 2 EPs, with a
