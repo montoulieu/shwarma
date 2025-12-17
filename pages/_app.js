@@ -4,7 +4,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import * as gtag from '../lib/gtag';
-import { DefaultSeo } from 'next-seo';
+// import { DefaultSeo } from 'next-seo';
 import Head from "next/head";
 
 function MyApp({ Component, pageProps }) {
@@ -26,8 +26,8 @@ function MyApp({ Component, pageProps }) {
         <title>shwarma - denver kebab rock band</title>
         <link rel="icon" href="/favicon.png" />
       </Head>
-      
-      <DefaultSeo
+
+      {/* <DefaultSeo
         title="shwarma - Denver Kebab Rock Band"
         description="shwarma is an experimental psychedelic and progressive rock band hailing from Denver, Colorado."
         openGraph={{
@@ -47,7 +47,7 @@ function MyApp({ Component, pageProps }) {
           site: "@shwarmaband",
           cardType: "summary_large_image",
         }}
-      />
+      /> */}
       <Component {...pageProps} />
     </div>
   );
