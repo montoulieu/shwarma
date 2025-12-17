@@ -10,6 +10,7 @@ import {
   Dialog,
   DialogContent,
   DialogTrigger,
+  DialogTitle,
 } from "@/components/ui/dialog";
 
 function MusicReleases() {
@@ -38,6 +39,9 @@ function MusicReleases() {
                   </Button>
                 </DialogTrigger>
                 <DialogContent className="max-w-fit border-none bg-transparent p-0 shadow-none">
+                  <DialogTitle className="sr-only">
+                    {release.name} by shwarma
+                  </DialogTitle>
                   <iframe
                     className="mx-auto block"
                     src={`https://bandcamp.com/EmbeddedPlayer/album=${release.embedID}/size=large/bgcol=212324/linkcol=098af8/transparent=true/`}
