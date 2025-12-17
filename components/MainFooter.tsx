@@ -26,13 +26,13 @@ export default function MainFooter() {
   return (
     <footer className="relative py-20 px-6 overflow-hidden">
       {/* Background Gradient */}
-      <div className="absolute inset-0 bg-gradient-to-t from-teal-950/20 via-transparent to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-t from-lime-950/20 via-transparent to-transparent" />
 
       <div className="relative max-w-5xl mx-auto">
         {/* Main CTA */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-black mb-4">
-            Ready to <span className="text-teal-400">feel the shwarmth</span>?
+            Ready to <span className="text-lime-400">feel the shwarmth</span>?
           </h2>
           <p className="text-lg text-white/60 mb-8 max-w-xl mx-auto">
             Book us for your next event, festival, or just say hello
@@ -99,7 +99,7 @@ export default function MainFooter() {
             </h3>
             <a
               href="mailto:shwarmaband@gmail.com"
-              className="text-teal-400 hover:text-teal-300 transition-colors font-medium"
+              className="text-lime-400 hover:text-lime-300 transition-colors font-medium"
             >
               shwarmaband@gmail.com
             </a>

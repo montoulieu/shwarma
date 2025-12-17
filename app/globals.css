@@ -14,19 +14,16 @@
   --color-bg-elevated: #111111;
   --color-bg-card: #161616;
 
-  /* Brand Colors - Kebab Rock Palette */
-  --color-teal: #2dd4bf;
-  --color-teal-glow: rgba(45, 212, 191, 0.4);
-  --color-amber: #f59e0b;
-  --color-amber-glow: rgba(245, 158, 11, 0.4);
-  --color-purple: #a855f7;
-  --color-purple-glow: rgba(168, 85, 247, 0.4);
-  --color-pink: #ec4899;
+  /* Brand Colors - Neon Green Rock Palette */
+  --color-accent: #70FF00;
+  --color-accent-glow: rgba(112, 255, 0, 0.4);
+  --color-accent-dark: #5acc00;
+  --color-accent-darker: #3d8c00;
 
   /* Gradients */
-  --gradient-psychedelic: linear-gradient(135deg, var(--color-teal), var(--color-purple), var(--color-pink));
-  --gradient-warm: linear-gradient(135deg, var(--color-amber), var(--color-pink));
-  --gradient-cosmic: linear-gradient(180deg, #0a0a0a 0%, #1a1a2e 50%, #0a0a0a 100%);
+  --gradient-warm: linear-gradient(135deg, var(--color-accent), var(--color-accent-dark));
+  --gradient-hero: linear-gradient(135deg, var(--color-accent), #a3ff4d);
+  --gradient-cosmic: linear-gradient(180deg, #0a0a0a 0%, #0a120a 50%, #0a0a0a 100%);
 
   /* Text */
   --color-text-primary: #fafafa;
@@ -34,13 +31,13 @@
   --color-text-muted: #71717a;
 
   /* Effects */
-  --shadow-glow: 0 0 30px var(--color-teal-glow);
-  --shadow-glow-amber: 0 0 30px var(--color-amber-glow);
+  --shadow-glow: 0 0 30px var(--color-accent-glow);
+  --shadow-glow-strong: 0 0 50px var(--color-accent-glow);
   --shadow-card: 0 4px 30px rgba(0, 0, 0, 0.5);
 
   /* Borders */
   --border-subtle: rgba(255, 255, 255, 0.08);
-  --border-accent: rgba(45, 212, 191, 0.3);
+  --border-accent: rgba(212, 165, 116, 0.3);
 
   /* Radius */
   --radius: 0.625rem;
@@ -77,12 +74,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--color-teal);
+  background: var(--color-accent);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-amber);
+  background: var(--color-gold);
 }
 
 /* ============================================
@@ -91,11 +88,11 @@ body {
 
 .heading {
   @apply text-4xl md:text-5xl lg:text-6xl font-black tracking-tight;
-  text-shadow: 0 0 40px var(--color-teal-glow);
+  text-shadow: 0 0 40px var(--color-accent-glow);
 }
 
 .heading-gradient {
-  background: var(--gradient-psychedelic);
+  background: var(--gradient-hero);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -108,7 +105,7 @@ body {
 
 .section-label {
   @apply text-sm font-bold uppercase tracking-[0.2em];
-  color: var(--color-teal);
+  color: var(--color-accent);
 }
 
 /* ============================================
@@ -134,7 +131,7 @@ body {
 /* Glow Button */
 .btn-glow {
   @apply px-6 py-3 font-bold rounded-full;
-  background: var(--gradient-psychedelic);
+  background: var(--gradient-warm);
   color: var(--color-bg);
   position: relative;
   overflow: hidden;
@@ -145,7 +142,7 @@ body {
   content: '';
   position: absolute;
   inset: -2px;
-  background: var(--gradient-psychedelic);
+  background: var(--gradient-warm);
   border-radius: inherit;
   filter: blur(15px);
   opacity: 0;
@@ -164,13 +161,13 @@ body {
 /* Ghost Button */
 .btn-ghost {
   @apply px-6 py-3 font-bold rounded-full;
-  border: 2px solid var(--color-teal);
-  color: var(--color-teal);
+  border: 2px solid var(--color-accent);
+  color: var(--color-accent);
   transition: all 0.3s ease;
 }
 
 .btn-ghost:hover {
-  background: var(--color-teal);
+  background: var(--color-accent);
   color: var(--color-bg);
   box-shadow: var(--shadow-glow);
 }
@@ -196,11 +193,11 @@ body {
 }
 
 .glow-amber {
-  box-shadow: var(--shadow-glow-amber);
+  box-shadow: var(--shadow-glow-gold);
 }
 
 .text-glow {
-  text-shadow: 0 0 30px var(--color-teal-glow);
+  text-shadow: 0 0 30px var(--color-accent-glow);
 }
 
 /* ============================================
@@ -257,11 +254,11 @@ body {
 
   0%,
   100% {
-    box-shadow: 0 0 20px var(--color-teal-glow);
+    box-shadow: 0 0 20px var(--color-accent-glow);
   }
 
   50% {
-    box-shadow: 0 0 40px var(--color-teal-glow), 0 0 60px var(--color-purple-glow);
+    box-shadow: 0 0 40px var(--color-accent-glow), 0 0 60px var(--color-gold-glow);
   }
 }
 
@@ -340,13 +337,9 @@ body {
   animation-delay: 0.6s;
 }
 
-/* Initially hidden for animations */
+/* Remove animation-on-scroll opacity since we're not using JS observer */
 .animate-on-scroll {
-  opacity: 0;
-}
-
-.animate-on-scroll.visible {
-  animation: fadeInUp 0.8s ease-out forwards;
+  opacity: 1;
 }
 
 /* ============================================
@@ -365,7 +358,7 @@ body {
 /* Divider with glow */
 .section-divider {
   height: 1px;
-  background: linear-gradient(90deg, transparent, var(--color-teal), transparent);
+  background: linear-gradient(90deg, transparent, var(--color-accent), transparent);
   opacity: 0.3;
 }
 
@@ -420,12 +413,12 @@ body {
   left: 0;
   width: 0;
   height: 2px;
-  background: var(--color-teal);
+  background: var(--color-accent);
   transition: width 0.3s ease;
 }
 
 .nav-link:hover {
-  color: var(--color-teal);
+  color: var(--color-accent);
 }
 
 .nav-link:hover::after {
@@ -444,7 +437,7 @@ body {
 }
 
 .social-icon:hover {
-  background: var(--color-teal);
+  background: var(--color-accent);
   color: var(--color-bg);
   transform: translateY(-3px);
   box-shadow: var(--shadow-glow);
@@ -487,7 +480,7 @@ body {
 }
 
 .text-brand {
-  color: var(--color-teal);
+  color: var(--color-accent);
 }
 
 p {
@@ -508,16 +501,16 @@ p {
   --radius-4xl: calc(var(--radius) + 16px);
   --color-background: var(--color-bg);
   --color-foreground: var(--color-text-primary);
-  --color-primary: var(--color-teal);
+  --color-primary: var(--color-accent);
   --color-primary-foreground: var(--color-bg);
   --color-secondary: var(--color-bg-elevated);
   --color-secondary-foreground: var(--color-text-primary);
   --color-muted: var(--color-bg-card);
   --color-muted-foreground: var(--color-text-muted);
-  --color-accent: var(--color-teal);
+  --color-accent: var(--color-accent);
   --color-accent-foreground: var(--color-bg);
   --color-border: var(--border-subtle);
-  --color-ring: var(--color-teal);
+  --color-ring: var(--color-accent);
 }
 
 @layer base {

@@ -69,7 +69,7 @@ export default function HeroSection() {
         {/* Dark gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black" />
         {/* Psychedelic color overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-teal-500/10 via-transparent to-purple-500/10" />
+        <div className="absolute inset-0 bg-gradient-to-br from-lime-500/10 via-transparent to-green-500/10" />
       </div>
 
       {/* Content */}

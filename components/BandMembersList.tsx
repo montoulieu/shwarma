@@ -56,12 +56,12 @@ export default function BandMembersList() {
                 </div>
 
                 {/* Border glow on hover */}
-                <div className="absolute inset-0 border-2 border-transparent group-hover:border-teal-500/50 rounded-2xl transition-colors duration-300" />
+                <div className="absolute inset-0 border-2 border-transparent group-hover:border-lime-500/50 rounded-2xl transition-colors duration-300" />
               </div>
 
               {/* Info */}
               <div className="text-center">
-                <h3 className="font-bold text-lg group-hover:text-teal-400 transition-colors">
+                <h3 className="font-bold text-lg group-hover:text-lime-400 transition-colors">
                   {member.name.split(" ")[0]}
                 </h3>
                 <p className="text-sm text-white/50">{member.role}</p>
@@ -76,7 +76,7 @@ export default function BandMembersList() {
           <div className="glass-card p-8 md:p-12">
             <p className="text-lg md:text-xl text-white/80 leading-relaxed mb-6">
               Out from the depths of Denver&apos;s music scene comes the 6-piece
-              kebab-rock monstrosity that is <span className="text-teal-400 font-bold">shwarma</span>.
+              kebab-rock monstrosity that is <span className="text-lime-400 font-bold">shwarma</span>.
               Creating music since 2017, they have released 3 albums and 2 EPs,
               with more on the way.
             </p>
@@ -85,7 +85,7 @@ export default function BandMembersList() {
               transitioning between genres and changing time signatures on the fly—shwarma
               has dominated the Denver music scene and is now branching out to new cities.
             </p>
-            <p className="text-2xl font-black text-teal-400 mt-8">
+            <p className="text-2xl font-black text-lime-400 mt-8">
               Get ready to feel the shwarmth! 🔥
             </p>
           </div>

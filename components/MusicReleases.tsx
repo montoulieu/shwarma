@@ -64,7 +64,7 @@ export default function MusicReleases() {
 
               {/* Album Info */}
               <div className="text-center md:text-left">
-                <span className="inline-block px-3 py-1 bg-teal-500/20 text-teal-400 text-xs font-bold uppercase tracking-wider rounded-full mb-4">
+                <span className="inline-block px-3 py-1 bg-lime-500/20 text-lime-400 text-xs font-bold uppercase tracking-wider rounded-full mb-4">
                   Latest Release
                 </span>
                 <h3 className="text-3xl md:text-4xl font-black mb-2">{latestRelease.name}</h3>
@@ -78,7 +78,7 @@ export default function MusicReleases() {
                       href={link.url}
                       target="_blank"
                       rel="noreferrer"
-                      className="inline-flex items-center gap-2 px-4 py-2 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-teal-500/50 rounded-full transition-all duration-300"
+                      className="inline-flex items-center gap-2 px-4 py-2 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-lime-500/50 rounded-full transition-all duration-300"
                     >
                       <FontAwesomeIcon icon={link.icon} className="w-4 h-4" />
                       <span className="text-sm font-medium">{link.name}</span>
@@ -138,7 +138,7 @@ export default function MusicReleases() {
                 </Dialog>
 
                 <div className="mt-3 text-center">
-                  <h4 className="font-bold text-sm truncate group-hover:text-teal-400 transition-colors">
+                  <h4 className="font-bold text-sm truncate group-hover:text-lime-400 transition-colors">
                     {release.name}
                   </h4>
                   <p className="text-xs text-white/50">{release.year}</p>
@@ -152,7 +152,7 @@ export default function MusicReleases() {
                       href={link.url}
                       target="_blank"
                       rel="noreferrer"
-                      className="text-white/40 hover:text-teal-400 transition-colors"
+                      className="text-white/40 hover:text-lime-400 transition-colors"
                       title={link.name}
                     >
                       <FontAwesomeIcon icon={link.icon} className="w-4 h-4" />

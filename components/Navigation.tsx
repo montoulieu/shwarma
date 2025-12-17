@@ -35,8 +35,8 @@ export default function Navigation() {
     <>
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled
-            ? "bg-black/80 backdrop-blur-xl border-b border-white/5 py-4"
-            : "bg-transparent py-6"
+          ? "bg-black/80 backdrop-blur-xl border-b border-white/5 py-4"
+          : "bg-transparent py-6"
           }`}
       >
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
@@ -102,7 +102,7 @@ export default function Navigation() {
               key={link.href}
               href={link.href}
               onClick={(e) => scrollToSection(e, link.href)}
-              className="text-3xl font-bold text-white hover:text-teal-400 transition-colors"
+              className="text-3xl font-bold text-white hover:text-lime-400 transition-colors"
             >
               {link.label}
             </a>

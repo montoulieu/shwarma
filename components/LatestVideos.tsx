@@ -65,7 +65,7 @@ export default function LatestVideos() {
             <button
               key={video.id}
               onClick={() => setActiveVideo(video)}
-              className="group relative aspect-video rounded-lg overflow-hidden border-2 border-transparent hover:border-teal-500 transition-all duration-300"
+              className="group relative aspect-video rounded-lg overflow-hidden border-2 border-transparent hover:border-lime-500 transition-all duration-300"
             >
               {/* YouTube Thumbnail */}
               <img
