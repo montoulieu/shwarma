@@ -1,5 +1,10 @@
 module.exports = {
   images: {
-    domains: ["f4.bcbits.com"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "f4.bcbits.com",
+      },
+    ],
   },
 };

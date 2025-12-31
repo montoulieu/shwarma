@@ -1,0 +1,524 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* ============================================
+   SHWARMA - PSYCHEDELIC DESIGN SYSTEM
+   ============================================ */
+
+:root {
+  /* Core Colors */
+  --color-bg: #0a0a0a;
+  --color-bg-elevated: #111111;
+  --color-bg-card: #161616;
+
+  /* Brand Colors - Neon Green Rock Palette */
+  --color-accent: #70FF00;
+  --color-accent-glow: rgba(112, 255, 0, 0.4);
+  --color-accent-dark: #5acc00;
+  --color-accent-darker: #3d8c00;
+
+  /* Gradients */
+  --gradient-warm: linear-gradient(135deg, var(--color-accent), var(--color-accent-dark));
+  --gradient-hero: linear-gradient(135deg, var(--color-accent), #a3ff4d);
+  --gradient-cosmic: linear-gradient(180deg, #0a0a0a 0%, #0a120a 50%, #0a0a0a 100%);
+
+  /* Text */
+  --color-text-primary: #fafafa;
+  --color-text-secondary: #a1a1aa;
+  --color-text-muted: #71717a;
+
+  /* Effects */
+  --shadow-glow: 0 0 30px var(--color-accent-glow);
+  --shadow-glow-strong: 0 0 50px var(--color-accent-glow);
+  --shadow-card: 0 4px 30px rgba(0, 0, 0, 0.5);
+
+  /* Borders */
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-accent: rgba(212, 165, 116, 0.3);
+
+  /* Radius */
+  --radius: 0.625rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-2xl: 2rem;
+}
+
+/* Base Styles */
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  @apply text-neutral-100;
+  background-color: var(--color-bg);
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+#__next {
+  @apply min-h-screen;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-accent);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gold);
+}
+
+/* ============================================
+   TYPOGRAPHY
+   ============================================ */
+
+.heading {
+  @apply text-4xl md:text-5xl lg:text-6xl font-black tracking-tight;
+  text-shadow: 0 0 40px var(--color-accent-glow);
+}
+
+.heading-gradient {
+  background: var(--gradient-hero);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.subheading {
+  @apply text-xl md:text-2xl font-bold tracking-wide;
+  color: var(--color-text-secondary);
+}
+
+.section-label {
+  @apply text-sm font-bold uppercase tracking-[0.2em];
+  color: var(--color-accent);
+}
+
+/* ============================================
+   COMPONENTS
+   ============================================ */
+
+/* Glass Card */
+.glass-card {
+  background: rgba(22, 22, 22, 0.8);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card:hover {
+  border-color: var(--border-accent);
+  box-shadow: var(--shadow-glow);
+  transform: translateY(-4px);
+}
+
+/* Glow Button */
+.btn-glow {
+  @apply px-6 py-3 font-bold rounded-full;
+  background: var(--gradient-warm);
+  color: var(--color-bg);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.btn-glow::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  background: var(--gradient-warm);
+  border-radius: inherit;
+  filter: blur(15px);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.btn-glow:hover::before {
+  opacity: 0.7;
+}
+
+.btn-glow:hover {
+  transform: translateY(-2px) scale(1.02);
+}
+
+/* Ghost Button */
+.btn-ghost {
+  @apply px-6 py-3 font-bold rounded-full;
+  border: 2px solid var(--color-accent);
+  color: var(--color-accent);
+  transition: all 0.3s ease;
+}
+
+.btn-ghost:hover {
+  background: var(--color-accent);
+  color: var(--color-bg);
+  box-shadow: var(--shadow-glow);
+}
+
+/* ============================================
+   EFFECTS
+   ============================================ */
+
+/* Grain Overlay */
+.grain-overlay::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.03;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* Glow Effect */
+.glow {
+  box-shadow: var(--shadow-glow);
+}
+
+.glow-amber {
+  box-shadow: var(--shadow-glow-gold);
+}
+
+.text-glow {
+  text-shadow: 0 0 30px var(--color-accent-glow);
+}
+
+/* ============================================
+   ANIMATIONS
+   ============================================ */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulse-glow {
+
+  0%,
+  100% {
+    box-shadow: 0 0 20px var(--color-accent-glow);
+  }
+
+  50% {
+    box-shadow: 0 0 40px var(--color-accent-glow), 0 0 60px var(--color-gold-glow);
+  }
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Animation Utilities */
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 0.8s ease-out forwards;
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-shift 8s ease infinite;
+}
+
+/* Stagger delays for lists */
+.stagger-1 {
+  animation-delay: 0.1s;
+}
+
+.stagger-2 {
+  animation-delay: 0.2s;
+}
+
+.stagger-3 {
+  animation-delay: 0.3s;
+}
+
+.stagger-4 {
+  animation-delay: 0.4s;
+}
+
+.stagger-5 {
+  animation-delay: 0.5s;
+}
+
+.stagger-6 {
+  animation-delay: 0.6s;
+}
+
+/* Remove animation-on-scroll opacity since we're not using JS observer */
+.animate-on-scroll {
+  opacity: 1;
+}
+
+/* ============================================
+   SECTION STYLES
+   ============================================ */
+
+.section {
+  @apply py-20 md:py-32 px-6;
+  position: relative;
+}
+
+.section-content {
+  @apply max-w-7xl mx-auto;
+}
+
+/* Divider with glow */
+.section-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-accent), transparent);
+  opacity: 0.3;
+}
+
+/* ============================================
+   ALBUM CARDS
+   ============================================ */
+
+.album-card {
+  @apply relative overflow-hidden;
+  border-radius: var(--radius-lg);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.album-card img {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.album-card:hover {
+  transform: scale(1.03);
+}
+
+.album-card:hover img {
+  filter: brightness(0.7);
+}
+
+.album-card-overlay {
+  @apply absolute inset-0 flex items-center justify-center;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.album-card:hover .album-card-overlay {
+  opacity: 1;
+}
+
+/* ============================================
+   NAVIGATION
+   ============================================ */
+
+.nav-link {
+  @apply text-sm font-medium uppercase tracking-wider;
+  color: var(--color-text-secondary);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--color-accent);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--color-accent);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* ============================================
+   SOCIAL ICONS
+   ============================================ */
+
+.social-icon {
+  @apply w-12 h-12 flex items-center justify-center rounded-full;
+  background: var(--border-subtle);
+  color: var(--color-text-secondary);
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  background: var(--color-accent);
+  color: var(--color-bg);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-glow);
+}
+
+/* ============================================
+   VIDEO CONTAINER
+   ============================================ */
+
+.video-container {
+  @apply relative overflow-hidden;
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border-subtle);
+  transition: all 0.3s ease;
+}
+
+.video-container:hover {
+  border-color: var(--border-accent);
+  box-shadow: var(--shadow-glow);
+}
+
+.video-16-9 {
+  @apply aspect-video;
+}
+
+/* ============================================
+   LEGACY SUPPORT (keeping some old classes)
+   ============================================ */
+
+.font-heading {
+  @apply font-black mb-5;
+}
+
+.main-photo {
+  filter: hue-rotate(-120deg);
+}
+
+.blue-hover {
+  @apply text-teal-300 hover:text-teal-400 transition-colors duration-200;
+}
+
+.text-brand {
+  color: var(--color-accent);
+}
+
+p {
+  @apply mb-3;
+}
+
+/* ============================================
+   THEME INTEGRATION (keeping Tailwind themes)
+   ============================================ */
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+  --color-background: var(--color-bg);
+  --color-foreground: var(--color-text-primary);
+  --color-primary: var(--color-accent);
+  --color-primary-foreground: var(--color-bg);
+  --color-secondary: var(--color-bg-elevated);
+  --color-secondary-foreground: var(--color-text-primary);
+  --color-muted: var(--color-bg-card);
+  --color-muted-foreground: var(--color-text-muted);
+  --color-accent: var(--color-accent);
+  --color-accent-foreground: var(--color-bg);
+  --color-border: var(--border-subtle);
+  --color-ring: var(--color-accent);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
