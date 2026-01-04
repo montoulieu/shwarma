@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import releases from "@/data/releases";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Button } from "@/components/ui/button";
@@ -32,35 +33,50 @@ export default function MusicReleases() {
           <div className="glass-card p-6 md:p-10 max-w-4xl mx-auto">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               {/* Album Art */}
-              <Dialog>
-                <DialogTrigger asChild>
-                  <button className="album-card group">
-                    <Image
-                      src={latestRelease.image}
-                      height={500}
-                      width={500}
-                      className="w-full rounded-lg shadow-2xl"
-                      alt={`${latestRelease.name} album cover`}
-                    />
-                    <div className="album-card-overlay rounded-lg">
-                      <span className="btn-glow">Play Album</span>
-                    </div>
-                  </button>
-                </DialogTrigger>
-                <DialogContent className="max-w-fit border-none bg-transparent p-0 shadow-none">
-                  <DialogTitle className="sr-only">
-                    {latestRelease.name} by shwarma
-                  </DialogTitle>
-                  <iframe
-                    className="mx-auto block rounded-xl"
-                    src={`https://bandcamp.com/EmbeddedPlayer/album=${latestRelease.embedID}/size=large/bgcol=0a0a0a/linkcol=2dd4bf/transparent=true/`}
-                    seamless
-                    width="350px"
-                    height="780px"
-                    title={`${latestRelease.name} bandcamp player`}
+              {latestRelease.slug ? (
+                <Link href={latestRelease.slug} className="album-card group block">
+                  <Image
+                    src={latestRelease.image}
+                    height={500}
+                    width={500}
+                    className="w-full rounded-lg shadow-2xl"
+                    alt={`${latestRelease.name} album cover`}
                   />
-                </DialogContent>
-              </Dialog>
+                  <div className="album-card-overlay rounded-lg">
+                    <span className="btn-glow">Play Album</span>
+                  </div>
+                </Link>
+              ) : (
+                <Dialog>
+                  <DialogTrigger asChild>
+                    <button className="album-card group">
+                      <Image
+                        src={latestRelease.image}
+                        height={500}
+                        width={500}
+                        className="w-full rounded-lg shadow-2xl"
+                        alt={`${latestRelease.name} album cover`}
+                      />
+                      <div className="album-card-overlay rounded-lg">
+                        <span className="btn-glow">Play Album</span>
+                      </div>
+                    </button>
+                  </DialogTrigger>
+                  <DialogContent className="max-w-fit border-none bg-transparent p-0 shadow-none">
+                    <DialogTitle className="sr-only">
+                      {latestRelease.name} by shwarma
+                    </DialogTitle>
+                    <iframe
+                      className="mx-auto block rounded-xl"
+                      src={`https://bandcamp.com/EmbeddedPlayer/album=${latestRelease.embedID}/size=large/bgcol=0a0a0a/linkcol=2dd4bf/transparent=true/`}
+                      seamless
+                      width="350px"
+                      height="780px"
+                      title={`${latestRelease.name} bandcamp player`}
+                    />
+                  </DialogContent>
+                </Dialog>
+              )}
 
               {/* Album Info */}
               <div className="text-center md:text-left">

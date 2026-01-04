@@ -31,7 +31,7 @@ const tracks = [
 
 export default function FromBeyond() {
   return (
-    <div className="grain-overlay min-h-screen">
+    <div className="grain-overlay min-h-screen animate-fade-in">
       {/* Background Effects */}
       <div className="fixed inset-0 z-0">
         {/* Background Image - add your image here */}
@@ -68,7 +68,7 @@ export default function FromBeyond() {
       <main className="relative z-10 px-6 pb-20">
         <div className="max-w-4xl mx-auto">
           {/* Album Header */}
-          <div className="text-center mb-12 animate-fade-in-up">
+          <div className="text-center mb-12">
             <span className="inline-block px-4 py-1.5 bg-lime-500/20 text-lime-400 text-xs font-bold uppercase tracking-widest rounded-full mb-6">
               Coming March 2nd
             </span>
@@ -84,7 +84,7 @@ export default function FromBeyond() {
           </div>
 
           {/* Album Art + Description */}
-          <div className="grid md:grid-cols-2 gap-8 mb-12 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
             {/* Album Art */}
             <div className="aspect-square rounded-2xl overflow-hidden border border-white/10 relative">
               <Image
@@ -125,7 +125,7 @@ export default function FromBeyond() {
           </div>
 
           {/* Player */}
-          <div className="animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+          <div>
             <AlbumPlayer
               tracks={tracks}
               albumTitle="From Beyond"

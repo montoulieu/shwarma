@@ -230,7 +230,7 @@ export default function AlbumPlayer({ tracks, albumTitle, albumArt }: AlbumPlaye
                 {isTrackPlaying ? (
                   <Pause className="w-5 h-5 fill-current text-lime-400 group-hover:text-black transition-colors" />
                 ) : (
-                  <Play className="w-5 h-5 fill-current text-lime-400 group-hover:text-black transition-colors translate-x-0.5" />
+                  <Play className="w-5 h-5 fill-current text-lime-400 group-hover:text-black transition-colors" />
                 )}
               </div>
               <div>
@@ -343,7 +343,7 @@ export default function AlbumPlayer({ tracks, albumTitle, albumArt }: AlbumPlaye
             ) : isPlaying ? (
               <Pause className="w-7 h-7 md:w-8 md:h-8 fill-current" />
             ) : (
-              <Play className="w-7 h-7 md:w-8 md:h-8 fill-current translate-x-0.5" />
+              <Play className="w-7 h-7 md:w-8 md:h-8 fill-current" />
             )}
           </button>
 
