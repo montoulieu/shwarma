@@ -6,10 +6,18 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "From Beyond - shwarma",
-  description: "Preview shwarma's upcoming album 'From Beyond' - 11 tracks of experimental psychedelic rock.",
+  description: "Embark on an interstellar voyage with 11 tracks of heavy psych rock. Preview shwarma's upcoming album 'From Beyond'.",
   openGraph: {
     title: "From Beyond - shwarma",
-    description: "Preview shwarma's upcoming album 'From Beyond' - 11 tracks of experimental psychedelic rock.",
+    description: "Embark on an interstellar voyage with 11 tracks of heavy psych rock. Preview shwarma's upcoming album 'From Beyond'.",
+    images: [
+      {
+        url: "/images/album/from-beyond/og.jpg",
+        width: 1200,
+        height: 630,
+        alt: "From Beyond - shwarma Album Cover",
+      },
+    ],
   },
 };
 
