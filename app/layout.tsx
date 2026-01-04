@@ -2,6 +2,7 @@ import { Suspense } from "react";
 import "./globals.css";
 import { Metadata } from "next";
 import GoogleAnalytics from "./GoogleAnalytics";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.shwarma.band"),
@@ -40,6 +41,7 @@ export default function RootLayout({
           <GoogleAnalytics />
         </Suspense>
         {children}
+        <Analytics />
       </body>
     </html>
   );
