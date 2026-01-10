@@ -522,3 +522,42 @@ p {
     @apply bg-background text-foreground;
   }
 }
+
+/* ============================================
+   BANDSINTOWN WIDGET COLORS
+   ============================================ */
+
+/* Venue/Location - brand color */
+.bit-widget .bit-venue,
+.bit-widget .bit-location {
+  color: var(--color-accent) !important;
+  font-weight: 600 !important;
+}
+
+/* Event title - slightly muted but visible */
+.bit-widget .bit-event-title,
+.bit-widget .bit-event-name {
+  color: rgba(255, 255, 255, 0.95) !important;
+  font-weight: 700 !important;
+}
+
+/* Lineup "with" text - subtle accent */
+.bit-widget .bit-lineup,
+.bit-widget [class*="lineup"] {
+  color: var(--color-accent) !important;
+  opacity: 0.7 !important;
+  font-style: italic !important;
+}
+
+/* Date/time emphasis */
+.bit-widget .bit-date,
+.bit-widget .bit-startTime {
+  color: var(--color-accent) !important;
+  font-weight: 700 !important;
+}
+
+/* Description text */
+.bit-widget .bit-description,
+.bit-widget .bit-event-description {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
