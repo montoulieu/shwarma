@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
+import TourDates from "@/components/TourDates";
 import MusicReleases from "@/components/MusicReleases";
 import LatestVideos from "@/components/LatestVideos";
 import GalleryPhotos from "@/components/GalleryPhotos";
@@ -15,6 +16,10 @@ export default function Home() {
         <HeroSection />
 
         {/* Divider */}
+        <div className="section-divider" />
+
+        <TourDates />
+
         <div className="section-divider" />
 
         <MusicReleases />

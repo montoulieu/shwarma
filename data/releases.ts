@@ -21,29 +21,29 @@ export interface Release {
 }
 
 const releases: Release[] = [
-  // {
-  //   name: "From Beyond",
-  //   year: 2026,
-  //   image: "/images/album/from-beyond/cover.jpg",
-  //   slug: "/preview/from-beyond",
-  //   links: [
-  //     {
-  //       icon: faBandcamp,
-  //       name: "Bandcamp",
-  //       url: "#/fb-bc", // Coming soon
-  //     },
-  //     {
-  //       icon: faSpotify,
-  //       name: "Spotify",
-  //       url: "#/fb-spotify", // Coming soon
-  //     },
-  //     {
-  //       icon: faApple,
-  //       name: "Apple Music",
-  //       url: "#/fb-apple", // Coming soon
-  //     },
-  //   ],
-  // },
+  {
+    name: "From Beyond",
+    year: 2026,
+    image: "/images/album/from-beyond/cover.jpg",
+    slug: "/preview/from-beyond",
+    links: [
+      {
+        icon: faBandcamp,
+        name: "Bandcamp",
+        url: "#/fb-bc", // Coming soon
+      },
+      {
+        icon: faSpotify,
+        name: "Spotify",
+        url: "#/fb-spotify", // Coming soon
+      },
+      {
+        icon: faApple,
+        name: "Apple Music",
+        url: "#/fb-apple", // Coming soon
+      },
+    ],
+  },
   {
     name: "Best Cerv'd Shwarm (Live)",
     year: 2024,
