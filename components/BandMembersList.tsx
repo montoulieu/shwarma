@@ -78,7 +78,7 @@ export default function BandMembersList() {
               Out from the depths of Denver&apos;s music scene comes the 6-piece
               kebab-rock powerhouse that is <span className="text-lime-400 font-bold">shwarma</span>.
               Creating music since 2017, they have released 3 full length albums, 2 EPs, and 2 live albums,
-              with a 4th full length currently set to release March 2nd, 2026.
+              with a 4th full length currently set to release 3/2/2026.
             </p>
             <p className="text-lg md:text-xl text-white/80 leading-relaxed">
               shwarma is renowned for delivering an eclectic musical experience, effortlessly
