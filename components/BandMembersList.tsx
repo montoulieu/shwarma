@@ -76,13 +76,15 @@ export default function BandMembersList() {
           <div className="glass-card p-8 md:p-12">
             <p className="text-lg md:text-xl text-white/80 leading-relaxed mb-6">
               Out from the depths of Denver&apos;s music scene comes the 6-piece
-              kebab-rock monstrosity that is <span className="text-lime-400 font-bold">shwarma</span>.
-              Creating music since 2017, they have released 3 albums and 2 EPs,
-              with more on the way.
+              kebab-rock powerhouse that is <span className="text-lime-400 font-bold">shwarma</span>.
+              Creating music since 2017, they have released 3 full length albums, 2 EPs, and 2 live albums,
+              with a 4th full length currently set to release March 2nd, 2026.
             </p>
             <p className="text-lg md:text-xl text-white/80 leading-relaxed">
-              Out from the depths of Denver's music scene comes the 6-piece kebab-rock powerhouse that is shwarma. Creating music since 2017, they have released 4 full length albums and 3 EPs, with a 5th full length currently set to release in the spring of 2026.
-              shwarma is renowned for delivering an eclectic musical experience, effortlessly transitioning between genres and changing time signatures on the fly. Over the years, they've risen up through the Denver music scene and are now branching out to play for new audiences that keep ranting and raving about their live show! Get ready to feel the shwarmth!
+              shwarma is renowned for delivering an eclectic musical experience, effortlessly
+              transitioning between genres and changing time signatures on the fly. Over the years,
+              they&apos;ve risen up through the Denver music scene and are now branching out to play
+              for new audiences that keep ranting and raving about their live show!
             </p>
             <p className="text-2xl font-black text-lime-400 mt-8">
               Get ready to feel the shwarmth! 🔥

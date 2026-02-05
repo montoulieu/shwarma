@@ -11,10 +11,13 @@ export interface ReleaseLink {
   url: string;
 }
 
+export type ReleaseCategory = "album" | "ep" | "live";
+
 export interface Release {
   name: string;
   year: number;
   image: string;
+  category: ReleaseCategory;
   embedID?: number;
   slug?: string;
   links: ReleaseLink[];
@@ -25,6 +28,7 @@ const releases: Release[] = [
     name: "From Beyond",
     year: 2026,
     image: "/images/album/from-beyond/cover.jpg",
+    category: "album",
     slug: "/preview/from-beyond",
     links: [
       {
@@ -48,6 +52,7 @@ const releases: Release[] = [
     name: "Best Cerv'd Shwarm (Live)",
     year: 2024,
     image: "https://f4.bcbits.com/img/a2936200661_10.jpg",
+    category: "live",
     embedID: 255999805,
     links: [
       {
@@ -71,6 +76,7 @@ const releases: Release[] = [
     name: "Cheeseborgle EP",
     year: 2023,
     image: "https://f4.bcbits.com/img/a2255511248_10.jpg",
+    category: "ep",
     embedID: 703452784,
     links: [
       {
@@ -94,6 +100,7 @@ const releases: Release[] = [
     name: "Kebab",
     year: 2022,
     image: "https://f4.bcbits.com/img/a0240524462_10.jpg",
+    category: "album",
     embedID: 3667111821,
     links: [
       {
@@ -117,6 +124,7 @@ const releases: Release[] = [
     name: "Loveworthy Live EP",
     year: 2021,
     image: "https://f4.bcbits.com/img/a1088914233_10.jpg",
+    category: "live",
     embedID: 1218904325,
     links: [
       {
@@ -140,6 +148,7 @@ const releases: Release[] = [
     name: "Emily's Aparments",
     year: 2020,
     image: "https://f4.bcbits.com/img/a0616848912_16.jpg",
+    category: "album",
     embedID: 1195944678,
     links: [
       {
@@ -163,6 +172,7 @@ const releases: Release[] = [
     name: "The Briny Deep",
     year: 2018,
     image: "https://f4.bcbits.com/img/a2680474440_16.jpg",
+    category: "album",
     embedID: 2712994336,
     links: [
       {
@@ -186,6 +196,7 @@ const releases: Release[] = [
     name: "Angular EP",
     year: 2017,
     image: "https://f4.bcbits.com/img/a1946338181_16.jpg",
+    category: "ep",
     embedID: 1418255605,
     links: [
       {
