@@ -81,9 +81,8 @@ export default function BandMembersList() {
               with more on the way.
             </p>
             <p className="text-lg md:text-xl text-white/80 leading-relaxed">
-              Renowned for delivering an eclectic musical experience—effortlessly
-              transitioning between genres and changing time signatures on the fly—shwarma
-              has dominated the Denver music scene and is now branching out to new cities.
+              Out from the depths of Denver's music scene comes the 6-piece kebab-rock powerhouse that is shwarma. Creating music since 2017, they have released 4 full length albums and 3 EPs, with a 5th full length currently set to release in the spring of 2026.
+              shwarma is renowned for delivering an eclectic musical experience, effortlessly transitioning between genres and changing time signatures on the fly. Over the years, they've risen up through the Denver music scene and are now branching out to play for new audiences that keep ranting and raving about their live show! Get ready to feel the shwarmth!
             </p>
             <p className="text-2xl font-black text-lime-400 mt-8">
               Get ready to feel the shwarmth! 🔥
